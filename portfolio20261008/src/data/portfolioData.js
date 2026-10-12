@@ -6,13 +6,13 @@
 export const profileData = {
   name: "박성국",
   engName: "PARK SUNG KUK",
-  role: "Web Backend & Full-Stack Developer",
+  role: "Full-Stack Developer",
   headline: "새로운 환경에서도 원인과 구조를 집요하게 파악하고 끝까지 책임을 다하는 개발자",
   introTitle: "새로운 배움에 주저하지 않고, 맡은 일에 끝까지 책임을 다합니다",
   introText: [
     "저는 새로운 환경에서도 부족한 부분을 스스로 찾아 배우고, 맡은 일에 끝까지 책임을 가지고 결과를 만들어내려는 사람입니다.",
     "여러 프로젝트 경험과 시행착오를 겪으며 자신의 부족함을 인정하고 개선하는 법을 배웠고, 특히 한번 맡은 역할에 대해서는 책임감을 가지고 끝까지 완수해 왔습니다.",
-    "실시간 데이터 연동(EPL 축구, 네이버 치지직 스트리밍, 네이버 지도)과 AI 파이프라인(Google Gemini)을 결합한 웹 서비스를 주도적으로 설계·개발하며 탄탄한 백엔드 아키텍처와 사용자 중심 프론트엔드를 구축했습니다."
+    "실시간 외부 데이터 API(EPL 경기 데이터, 네이버 치지직 스트리밍, 네이버 지도 위치기반서비스(LBS)) 연동과 Google Gemini API 기반 생성형 AI 파이프라인을 결합한 웹 서비스를 주도적으로 설계·개발하며 탄탄한 백엔드 아키텍처와 사용자 중심 프론트엔드를 구축했습니다."
   ],
   coreCompetencies: [
     { title: "원인과 구조 파악", desc: "오류 및 이슈 발생 시 단순 코드 수정을 넘어 입력부터 처리, 결과까지의 데이터 흐름을 추적하여 근본 원인을 특정합니다." },
@@ -22,8 +22,8 @@ export const profileData = {
     { title: "협업과 방향 조율", desc: "팀원들과 개발 지식 및 ERD 설계를 적극적으로 공유하고 소통하며 팀 전체가 한 방향으로 전진할 수 있도록 조율합니다." }
   ],
   bio: [
-    "실시간 데이터 연동(EPL 축구, 네이버 치지직 스트리밍, 네이버 지도)과 AI 파이프라인(Google Gemini)을 결합한 웹 서비스를 설계하고 개발했습니다.",
-    "Spring MVC 백엔드 아키텍처와 React 19 기반의 최신 프론트엔드 환경을 두루 경험하며, 동시성 제어, 트랜잭션 무결성, 클린 코드(단일 책임 원칙)를 중시합니다.",
+    "실시간 외부 데이터 API(EPL 경기 데이터, 네이버 치지직 스트리밍, 네이버 지도 위치기반서비스(LBS)) 연동과 Google Gemini API 기반 생성형 AI 파이프라인을 결합한 웹 서비스를 설계하고 개발했습니다.",
+    "Spring MVC 기반 백엔드 아키텍처와 React 프론트엔드 환경을 두루 경험하며, 동시성 제어, 트랜잭션 무결성, 클린 코드(단일 책임 원칙)를 중시합니다.",
     "여러 차례 팀장 및 기술팀장으로서 팀원들과 방향을 맞추고 책임감 있게 프로젝트를 완수해 왔습니다."
   ],
   photoPlaceholder: {
@@ -45,7 +45,7 @@ export const skillsData = [
   {
     category: "Languages",
     items: [
-      { name: "Java 11 / 17", level: "Advanced", desc: "객체지향 프로그래밍(OOP), 컬렉션 프레임워크, 멀티스레딩, 자바 표준 라이브러리" },
+      { name: "Java", level: "Advanced", desc: "객체지향 프로그래밍(OOP), 컬렉션 프레임워크, 멀티스레딩, 자바 표준 API" },
       { name: "JavaScript (ES6+)", level: "Advanced", desc: "비동기 이벤트 루프(Promise, async/await), 모던 문법, DOM 제어" },
       { name: "SQL (Oracle / ANSI)", level: "Advanced", desc: "복합 쿼리 작성, 조인 최적화, DDL/DML, 트랜잭션 제어" },
       { name: "C / C++", level: "Intermediate", desc: "자료구조, 알고리즘, 메모리 구조(포인터) 및 CS 기본기" },
@@ -55,8 +55,8 @@ export const skillsData = [
   {
     category: "Backend",
     items: [
-      { name: "Java 11 / 17", level: "Advanced", desc: "객체지향 설계, 컬렉션 프레임워크, 멀티스레딩" },
-      { name: "Spring MVC 5.3", level: "Advanced", desc: "IoC/DI, AOP, HandlerInterceptor, Controller-Service-DAO" },
+      { name: "Java", level: "Advanced", desc: "객체지향 설계, 컬렉션 프레임워크, 멀티스레딩" },
+      { name: "Spring Framework", level: "Advanced", desc: "Spring MVC 코어 아키텍처, IoC/DI, AOP, HandlerInterceptor" },
       { name: "MyBatis 3.5", level: "Advanced", desc: "Dynamic Query, ResultMap 매핑, 서브쿼리 최적화" },
       { name: "RESTful API", level: "Advanced", desc: "ApiResponse 표준화, HTTP 상태 코드 매핑" },
       { name: "JSP / Servlet", level: "Advanced", desc: "MVC Model 2 아키텍처, 서블릿 라이프사이클" },
@@ -67,7 +67,7 @@ export const skillsData = [
   {
     category: "Frontend",
     items: [
-      { name: "React 19", level: "Advanced", desc: "컴포넌트 라이프사이클, 훅(Hooks), 모듈화" },
+      { name: "React", level: "Advanced", desc: "컴포넌트 라이프사이클, 훅(Hooks), 모듈화" },
       { name: "Redux Toolkit", level: "Advanced", desc: "전역 상태 관리, 슬라이스 설계, 세션 영속화" },
       { name: "JavaScript (ES6+)", level: "Advanced", desc: "비동기 처리(Promise/async-await), 모던 문법" },
       { name: "Vite", level: "Intermediate", desc: "모던 번들러 구성, HMR, 최적화" },
@@ -95,7 +95,7 @@ export const skillsData = [
       { name: "OpenWeatherMap API", level: "Intermediate", desc: "실시간 기상 데이터 비동기 수집 및 날씨 위젯 연동" },
       { name: "Naver Chzzk API", level: "Advanced", desc: "실시간 라이브 방송 메타데이터 파싱 및 게임 매핑" },
       { name: "Steam API", level: "Intermediate", desc: "스팀 상점 및 게임 메타데이터 연동 커뮤니티 구축" },
-      { name: "Naver Maps API", level: "Intermediate", desc: "지도 라이프사이클 제어, 커스텀 마커, LBS 연동" },
+      { name: "Naver Maps API", level: "Intermediate", desc: "지도 라이프사이클 제어, 커스텀 마커, 위치기반서비스(LBS) 연동" },
       { name: "HTML5 Geolocation API", level: "Intermediate", desc: "디바이스 좌표 획득 및 내 위치 기반 탐색" }
     ]
   },
@@ -167,10 +167,10 @@ export const projectsData = [
     title: "GreenWay",
     subtitle: "네이버 지도 및 실시간 기상 API 기반 도심 공원 및 산책로 탐색 웰니스 웹 서비스",
     period: "2026.07 ~ 2026.08",
-    role: "팀장 / 프론트엔드 환경 구축 / 네이버 지도 LBS 연동 / 날씨 위젯 / 플로팅 모달 / 배포 전담",
+    role: "팀장 / 프론트엔드 환경 구축 / 네이버 지도 기반 위치기반서비스(LBS) 연동 / 날씨 위젯 / 플로팅 모달 / 배포 전담",
     teamSize: "팀 프로젝트 (휴먼교육센터)",
     category: "Frontend Web Application",
-    badges: ["React 19", "Vite", "Naver Maps API", "OpenWeatherMap API", "HTML5 Geolocation API", "react-rnd", "GitHub Pages"],
+    badges: ["React", "Vite", "Naver Maps API", "OpenWeatherMap API", "HTML5 Geolocation API", "react-rnd", "GitHub Pages"],
     github: "https://github.com/PSK6262/Team_OneCode",
     demo: "https://psk6262.github.io/Team_OneCode/",
     thumbnail: "/images/projects/greenway.png",
@@ -201,13 +201,13 @@ export const projectsData = [
         area: "팀 리딩 및 프론트엔드 아키텍처 / 배포 파이프라인 구축",
         details: [
           "팀장으로서 전체 개발 방향성을 수립하고, 팀원 간 변수명 및 디렉토리 구조를 프로젝트 착수 단계에서 통일하여 배포",
-          "Vite + React 19 기반 프로젝트 보일러플레이트 구축 및 ESLint 표준화",
+          "Vite + React 기반 프로젝트 보일러플레이트 구축 및 ESLint 표준화",
           "GitHub Pages 정적 호스팅 환경에서 새로고침 404 방지를 위해 HashRouter로 선제적 전환 및 배포 자동화",
           "네이버 지도 API Key 등 외부 인증 키를 .env 환경변수로 안전하게 격리"
         ]
       },
       {
-        area: "지도 및 위치 기반 서비스 (Naver Maps API & HTML5 Geolocation API) 개발",
+        area: "지도 및 위치기반서비스 (Naver Maps API & HTML5 Geolocation API) 개발",
         details: [
           "네이버 지도 객체 비동기 초기화 및 지도 중심점, 줌(Zoom), 드래그 라이프사이클 제어",
           "HTML5 Geolocation API를 연동하여 사용자 위/경도 좌표를 획득하고 원클릭으로 내 위치 중심 이동 구현",
@@ -251,8 +251,8 @@ export const projectsData = [
     period: "2026.08 ~ 2026.09",
     role: "기술팀장 / 백엔드 코어 인프라 / ERD 총괄 / 네이버 치지직 API 실시간 파싱 / 게시판 / 보안 인증 전담",
     teamSize: "팀 프로젝트 (휴먼교육센터)",
-    category: "Full-Stack Web · Spring MVC & JSP",
-    badges: ["Java 11", "Spring MVC 5.3", "MyBatis 3.5", "Oracle 19c", "Naver Chzzk API", "Steam API", "JavaMail API", "DBCP2"],
+    category: "Full-Stack Web · Spring Framework & JSP",
+    badges: ["Java", "Spring Framework", "MyBatis", "Oracle 19c", "Naver Chzzk API", "Steam API", "JavaMail API", "DBCP2"],
     github: "https://github.com/PSK6262/Team_5asis",
     thumbnail: "/images/projects/5asis-main.jpg",
     images: [
@@ -292,7 +292,7 @@ export const projectsData = [
         area: "기술팀장 리딩 & 백엔드 코어 아키텍처 / Spring 인프라 구축",
         details: [
           "기술팀장으로서 ERD와 데이터베이스 구성을 총괄하고, 개발 초기 단계에서 필요한 DTO 구조를 사전에 정의하여 배포",
-          "Java 11 기반 Spring MVC 5.3, MyBatis 3.5, Oracle JDBC, DBCP2 커넥션 풀 메이븐 의존성 설계",
+          "Java 기반 Spring Framework, MyBatis 3.5, Oracle JDBC, DBCP2 커넥션 풀 메이븐 의존성 설계",
           "root-context.xml(DataSource, SqlSessionFactoryBean), servlet-context.xml, web.xml 전체 인프라 구성",
           "UserInfo, Post, GameList, Comments, PagingPosts 등 전 계층 DTO 표준화"
         ]
@@ -350,7 +350,7 @@ export const projectsData = [
     role: "기술팀장 / 풀스택 아키텍처 총괄 / AI 파이프라인 / 데이터 동기화 / 외부 API 연동 전담",
     teamSize: "팀 프로젝트 (휴먼교육센터)",
     category: "Full-Stack Web & Mobile PWA",
-    badges: ["React 19", "Spring MVC", "Football-Data.org API", "Google Gemini AI API", "Oracle 19c", "Redux Toolkit", "PWA", "MyBatis"],
+    badges: ["React", "Spring Framework", "Football-Data.org API", "Google Gemini AI API", "Oracle 19c", "Redux Toolkit", "PWA", "MyBatis"],
     github: "https://github.com/PSK6262/Team_BuildUp",
     demo: "https://psk6262.github.io/Team_BuildUp/#/plug/mainpage",
     thumbnail: "/images/projects/plug-main.png",
@@ -400,7 +400,7 @@ export const projectsData = [
       {
         area: "기술팀장 리딩 & 풀스택 아키텍처 및 공통 통신 규격 수립",
         details: [
-          "기술팀장으로서 Spring MVC 백엔드 및 React 19 + Redux Toolkit 프론트엔드 초기 환경 및 디렉토리 구조 전면 셋업",
+          "기술팀장으로서 Spring MVC 백엔드 및 React + Redux Toolkit 프론트엔드 초기 환경 및 디렉토리 구조 전면 셋업",
           "ApiResponse<T>, ResultCode, CommonCode를 도입하여 프론트-백엔드 간 RESTful 통신 인터페이스 표준화",
           "글로벌 CORS 설정 일원화 및 환경변수 기반 JWT Secret Key 격리, local.properties 분리로 빌드 안정성 확보"
         ]

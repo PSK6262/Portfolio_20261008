@@ -11,7 +11,7 @@ export default function Footer() {
           © {currentYear} <strong>{profileData.engName}</strong>. All Rights Reserved.
         </p>
         <p className="footer-sub">
-          Built with React 19 & Vite · Designed for Full-Stack Portfolio Showcase
+          Built with React & Vite · Designed for Full-Stack Portfolio Showcase
         </p>
       </div>
     </footer>
