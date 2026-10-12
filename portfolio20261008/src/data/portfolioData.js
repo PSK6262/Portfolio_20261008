@@ -126,7 +126,7 @@ export const projectsData = [
       {
         label: "메인 커뮤니티 화면",
         url: "/images/projects/gamerparty.png",
-        caption: "GAMER PARTY 게임 커뮤니티 상단 GAMING 배너 및 게시판/로그인 메인 화면"
+        caption: "GAMER PARTY 게임 커뮤니티 상단 히어로 배너 및 파티원 모집 게시판/로그인 메인 화면"
       }
     ],
     summary:
