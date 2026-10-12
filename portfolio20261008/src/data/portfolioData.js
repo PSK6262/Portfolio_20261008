@@ -1,17 +1,30 @@
 /**
  * 포트폴리오 원천 데이터 (Portfolio Master Data)
- * D:\PORTFOLIO_REFERENCE_MASTER.md 기반
+ * D:\박성국 이력서.hwp (순수 텍스트 추출본) 및 D:\PORTFOLIO_REFERENCE_MASTER.md 기반
  */
 
 export const profileData = {
   name: "박성국",
-  engName: "PARK SUNG KUK (PSK)",
-  role: "Full-Stack Developer",
-  headline: "실시간 데이터 파이프라인과 비즈니스 정합성을 집요하게 고민하는 풀스택 개발자",
+  engName: "PARK SUNG KUK",
+  role: "Web Backend & Full-Stack Developer",
+  headline: "새로운 환경에서도 원인과 구조를 집요하게 파악하고 끝까지 책임을 다하는 개발자",
+  introTitle: "새로운 배움에 주저하지 않고, 맡은 일에 끝까지 책임을 다합니다",
+  introText: [
+    "저는 새로운 환경에서도 부족한 부분을 스스로 찾아 배우고, 맡은 일에 끝까지 책임을 가지고 결과를 만들어내려는 사람입니다.",
+    "여러 프로젝트 경험과 시행착오를 겪으며 자신의 부족함을 인정하고 개선하는 법을 배웠고, 특히 한번 맡은 역할에 대해서는 책임감을 가지고 끝까지 완수해 왔습니다.",
+    "실시간 데이터 연동(EPL 축구, 네이버 치지직 스트리밍, 네이버 지도)과 AI 파이프라인(Google Gemini)을 결합한 웹 서비스를 주도적으로 설계·개발하며 탄탄한 백엔드 아키텍처와 사용자 중심 프론트엔드를 구축했습니다."
+  ],
+  coreCompetencies: [
+    { title: "원인과 구조 파악", desc: "오류 및 이슈 발생 시 단순 코드 수정을 넘어 입력부터 처리, 결과까지의 데이터 흐름을 추적하여 근본 원인을 특정합니다." },
+    { title: "우선순위 & 빠른 대응", desc: "해결 가능성과 우선순위를 명확히 판단하여 병목을 줄이고 상황에 맞춰 유연하고 효율적으로 대응합니다." },
+    { title: "책임감 있는 리더십", desc: "여러 차례 프로젝트 팀장 및 기술팀장을 맡아 전체 아키텍처 설계, 컨벤션 표준화, 일정 관리를 주도하고 결과에 끝까지 책임졌습니다." },
+    { title: "자기주도 학습 & 지속적 보완", desc: "새로운 기술이나 부족한 역량을 스스로 빠르게 파악하고 공식 문서와 실습을 통해 지속적으로 보완해 나갑니다." },
+    { title: "협업과 방향 조율", desc: "팀원들과 개발 지식 및 ERD 설계를 적극적으로 공유하고 소통하며 팀 전체가 한 방향으로 전진할 수 있도록 조율합니다." }
+  ],
   bio: [
     "실시간 데이터 연동(EPL 축구, 네이버 치지직 스트리밍, 네이버 지도)과 AI 파이프라인(Google Gemini)을 결합한 웹 서비스를 설계하고 개발했습니다.",
     "Spring MVC 백엔드 아키텍처와 React 19 기반의 최신 프론트엔드 환경을 두루 경험하며, 동시성 제어, 트랜잭션 무결성, 클린 코드(단일 책임 원칙)를 중시합니다.",
-    "Git 기반 협업과 지속적인 리팩토링, 사용자 경험(UX) 개선을 주도적으로 이끌어갑니다."
+    "여러 차례 팀장 및 기술팀장으로서 팀원들과 방향을 맞추고 책임감 있게 프로젝트를 완수해 왔습니다."
   ],
   photoPlaceholder: {
     title: "프로필 사진 영역",
@@ -19,14 +32,38 @@ export const profileData = {
     hint: "추후 본인 사진 파일을 assets 폴더에 넣고 경로를 교체하세요."
   },
   contact: {
-    email: "qkrxotn60@gmail.com",
+    email: "Societe62@gmail.com",
+    phone: "010-2798-6852",
+    birth: "1997.08.14",
     github: "https://github.com/PSK6262",
     blog: "https://psk6262.github.io",
-    location: "충남 천안시 (Cheonan, Republic of Korea)"
+    location: "충남 천안시 동남구 신부동"
   }
 };
 
 export const skillsData = [
+  {
+    category: "Languages",
+    items: [
+      { name: "Java 11 / 17", level: "Advanced", desc: "객체지향 프로그래밍(OOP), 컬렉션 프레임워크, 멀티스레딩, 자바 표준 라이브러리" },
+      { name: "JavaScript (ES6+)", level: "Advanced", desc: "비동기 이벤트 루프(Promise, async/await), 모던 문법, DOM 제어" },
+      { name: "SQL (Oracle / ANSI)", level: "Advanced", desc: "복합 쿼리 작성, 조인 최적화, DDL/DML, 트랜잭션 제어" },
+      { name: "C / C++", level: "Intermediate", desc: "자료구조, 알고리즘, 메모리 구조(포인터) 및 CS 기본기" },
+      { name: "Python", level: "Intermediate", desc: "데이터 수집 및 파싱, 스크립팅, 업무 자동화" }
+    ]
+  },
+  {
+    category: "Backend",
+    items: [
+      { name: "Java 11 / 17", level: "Advanced", desc: "객체지향 설계, 컬렉션 프레임워크, 멀티스레딩" },
+      { name: "Spring MVC 5.3", level: "Advanced", desc: "IoC/DI, AOP, HandlerInterceptor, Controller-Service-DAO" },
+      { name: "MyBatis 3.5", level: "Advanced", desc: "Dynamic Query, ResultMap 매핑, 서브쿼리 최적화" },
+      { name: "RESTful API", level: "Advanced", desc: "ApiResponse 표준화, HTTP 상태 코드 매핑" },
+      { name: "JSP / Servlet", level: "Advanced", desc: "MVC Model 2 아키텍처, 서블릿 라이프사이클" },
+      { name: "Apache Tomcat", level: "Intermediate", desc: "서블릿 컨테이너 구성 및 WAR 배포" },
+      { name: "JavaMail API", level: "Intermediate", desc: "SMTP 프로토콜 기반 보안 토큰 이메일 인증 발송" }
+    ]
+  },
   {
     category: "Frontend",
     items: [
@@ -36,27 +73,17 @@ export const skillsData = [
       { name: "Vite", level: "Intermediate", desc: "모던 번들러 구성, HMR, 최적화" },
       { name: "React Router v7", level: "Intermediate", desc: "SPA 라우팅, HashRouter 기반 404 방어" },
       { name: "PWA", level: "Intermediate", desc: "Service Worker, Web App Manifest, Standalone 앱" },
-      { name: "Tailwind / CSS3", level: "Advanced", desc: "반응형 레이아웃, 모던 UI/UX, Framer Motion" }
-    ]
-  },
-  {
-    category: "Backend",
-    items: [
-      { name: "Java (11 / 17)", level: "Advanced", desc: "객체지향 설계, 컬렉션 프레임워크, 멀티스레딩" },
-      { name: "Spring MVC 5.3", level: "Advanced", desc: "IoC/DI, AOP, HandlerInterceptor, Controller-Service-DAO" },
-      { name: "MyBatis 3.5", level: "Advanced", desc: "Dynamic Query, ResultMap 매핑, 서브쿼리 최적화" },
-      { name: "RESTful API", level: "Advanced", desc: "ApiResponse 표준화, HTTP 상태 코드 매핑" },
-      { name: "JSP / JSTL", level: "Intermediate", desc: "서버 사이드 템플릿 렌더링, 태그 라이브러리" },
-      { name: "Apache Tomcat", level: "Intermediate", desc: "서블릿 컨테이너 구성 및 WAR 배포" }
+      { name: "CSS3 / Tailwind", level: "Advanced", desc: "반응형 레이아웃, 모던 UI/UX, Framer Motion" }
     ]
   },
   {
     category: "Database & Security",
     items: [
       { name: "Oracle Database 19c", level: "Intermediate", desc: "관계형 모델링, 트랜잭션 격리, 락 제어" },
+      { name: "H2 Database", level: "Intermediate", desc: "인메모리/파일 DB 구성 및 테스트 환경 구축" },
       { name: "Commons DBCP2", level: "Intermediate", desc: "커넥션 풀 최적화 및 DataSource 설정" },
       { name: "SQL 튜닝", level: "Intermediate", desc: "서브쿼리 N+1 방어, 조인 최적화, 페이징" },
-      { name: "JWT (JSON Web Token)", level: "Advanced", desc: "Stateless 인증/인가, 환경변수 비밀키 격리" },
+      { name: "JWT", level: "Advanced", desc: "Stateless 인증/인가, 환경변수 비밀키 격리" },
       { name: "SHA-256 + Per-User Salt", level: "Advanced", desc: "키 스트레칭 기반 비밀번호 단방향 암호화" }
     ]
   },
@@ -65,118 +92,207 @@ export const skillsData = [
     items: [
       { name: "Google Gemini AI API", level: "Advanced", desc: "프롬프트 엔지니어링, 포지션 정밀 분류, 유해성 모더레이션" },
       { name: "Football-Data.org API", level: "Advanced", desc: "EPL 실시간 데이터 수집, 스케줄러 동기화, UTC-KST 시차 보정" },
-      { name: "Naver 치지직(CHZZK) API", level: "Advanced", desc: "실시간 라이브 방송 메타데이터 파싱 및 게임 매핑" },
+      { name: "OpenWeatherMap API", level: "Intermediate", desc: "실시간 기상 데이터 비동기 수집 및 날씨 위젯 연동" },
+      { name: "Naver Chzzk API", level: "Advanced", desc: "실시간 라이브 방송 메타데이터 파싱 및 게임 매핑" },
+      { name: "Steam API", level: "Intermediate", desc: "스팀 상점 및 게임 메타데이터 연동 커뮤니티 구축" },
       { name: "Naver Maps API", level: "Intermediate", desc: "지도 라이프사이클 제어, 커스텀 마커, LBS 연동" },
-      { name: "HTML5 Geolocation API", level: "Intermediate", desc: "디바이스 좌표 획득 및 내 위치 기반 탐색" },
-      { name: "JavaMail (SMTP)", level: "Intermediate", desc: "5분 만료 보안 인증 토큰 이메일 발송 파이프라인" }
+      { name: "HTML5 Geolocation API", level: "Intermediate", desc: "디바이스 좌표 획득 및 내 위치 기반 탐색" }
+    ]
+  },
+  {
+    category: "Tools & Environment",
+    items: [
+      { name: "Git / GitHub", level: "Advanced", desc: "브랜치 전략, 이슈/PR 관리, 협업 파이프라인" },
+      { name: "Eclipse / VS Code", level: "Advanced", desc: "통합 개발 환경 및 디버깅 툴링" },
+      { name: "Maven / npm", level: "Intermediate", desc: "프로젝트 빌드 라이프사이클 및 의존성 패키지 관리" }
     ]
   }
 ];
 
+// 프로젝트 진행 순서 (학습 성장 흐름 반영)
 export const projectsData = [
   {
-    id: "buildup",
-    title: "BUILD UP (빌드업)",
-    subtitle: "EPL 실시간 데이터 분석, Gemini AI 보조 및 승부예측 축구 커뮤니티 플랫폼",
-    period: "2026.09 ~ 2026.10",
-    role: "풀스택 아키텍처 총괄 / AI 파이프라인 / 데이터 동기화 / 승부예측 엔진 전담",
-    teamSize: "팀 프로젝트 (4인)",
-    category: "Full-Stack Web & Mobile PWA",
-    badges: ["React 19", "Spring MVC", "Oracle 19c", "Google Gemini AI", "Redux Toolkit", "PWA", "MyBatis"],
+    id: "gamerparty",
+    title: "GAMER PARTY",
+    subtitle: "MVC 패턴 기반 기초 웹 아키텍처 및 H2DB 연동 게임 커뮤니티 사이트",
+    period: "2021.11 ~ 2021.12",
+    role: "팀장 / 전반적인 MVC 구조 설계 / H2DB CRUD 및 사용자 인증(JavaMail API) 전담",
+    teamSize: "학과 팀 프로젝트",
+    category: "Academic Web Project · JSP & MVC",
+    badges: ["JSP", "Servlet", "Apache Tomcat", "H2 Database", "JavaMail API", "MVC Pattern"],
+    github: "https://github.com/PSK6262/2022Web",
+    thumbnail: "/images/projects/gamerparty.png",
+    images: [
+      {
+        label: "메인 커뮤니티 화면",
+        url: "/images/projects/gamerparty.png",
+        caption: "GAMER PARTY 게임 커뮤니티 상단 GAMING 배너 및 게시판/로그인 메인 화면"
+      }
+    ],
     summary:
-      "프리미어리그(EPL) 20개 구단의 경기 일정, 결과, 선수 스쿼드를 실시간 자동 수집하고, Google Gemini AI를 접목한 선수 포지션 분류 및 커뮤니티 유해성 모더레이션을 구현한 축구 종합 플랫폼입니다.",
+      "MVC 패턴을 도입하여 프로그래밍의 기초적인 디자인 패턴을 실습하고, 사용자 인증과 게시판 CRUD 기능을 구현한 게임 커뮤니티 플랫폼입니다.",
     whatMade: [
-      "EPL 20개 구단 및 경기 일정/결과 실시간 자동 동기화 (스프링 스케줄러 & UTC-KST 시차 보정)",
-      "Google Gemini AI 기반 지능형 파이프라인 (비정형 선수 15개 세부 포지션 매핑, 한글화, 자동 모더레이션)",
-      "승부예측 & 포인트 베팅 시스템 (실시간 배당률 계산, 킥오프 전 수정 지원, 트랜잭션 기반 중복 정산 방어)",
-      "나만의 스쿼드 빌더 및 전술 시뮬레이션 (커스텀 포메이션, 유저 팀 간 가상 대결 및 쿨타임 제어)",
-      "관리자(Admin) 통합 제어 콘솔 (더미 경기 시뮬레이터, 스코어-타임라인 정합성 2단계 보정 도구)",
-      "Progressive Web App (PWA) 모바일 패키징 (오프라인 캐싱, 세로모드 고정, Standalone 전체화면)"
+      "JSP Model 2(MVC) 패턴 기반 커뮤니티 웹 아키텍처 설계",
+      "H2 Database 연동을 통한 사용자 및 게시글 CRUD 데이터베이스 핸들링",
+      "JavaMail API 연동을 통한 사용자 이메일 인증 기능 구현",
+      "게시글 목록 표시 및 페이지네이션 알고리즘 자체 구현"
     ],
     whatDid: [
       {
-        area: "풀스택 아키텍처 및 공통 규격 수립",
+        area: "전반적인 MVC 아키텍처 및 컨트롤러/모델 설계",
         details: [
-          "Spring MVC 백엔드 및 React 19 + Redux Toolkit 프론트엔드 초기 환경 및 디렉토리 구조 전면 셋업",
-          "ApiResponse<T>, ResultCode, CommonCode를 도입하여 프론트-백엔드 간 RESTful 통신 인터페이스 표준화",
-          "글로벌 CORS 설정 일원화 및 환경변수 기반 JWT Secret Key 격리, local.properties 분리로 빌드 안정성 확보"
+          "요청을 처리하는 서블릿 컨트롤러와 데이터 로직을 분리하는 MVC 구조 설계",
+          "H2 인메모리/파일 DB를 활용한 DAO/DTO 데이터 접근 계층 구축"
         ]
       },
       {
-        area: "외부 축구 API(Football-Data.org) ETL 및 스케줄러 동기화",
+        area: "JavaMail API 기반 사용자 인증 파이프라인",
         details: [
-          "20개 구단 메타데이터, 경기 일정(Matches), 순위표, 선수 스쿼드 대량 적재 파이프라인 개발",
-          "@Scheduled 기반 실시간 자동 갱신 및 HttpClient 커넥션 풀 재사용 적용",
-          "UTC 기준 경기 시각을 KST로 자동 변환하고 주말 자정 전후 시차 왜곡을 보정하는 알고리즘 구현",
-          "기존 Insecure TrustManager(SSL 우회)를 전면 제거하고 표준 SSL 핸드셰이크 체계 확립"
-        ]
-      },
-      {
-        area: "Google Gemini AI 지능형 파이프라인 구축",
-        details: [
-          "단순 4대 포지션(GK, DF, MF, FW)을 15개 세부 포지션(LWB, CDM, CAM, RW 등)으로 정밀 분류하는 프롬프트 엔지니어링 및 적재 파이프라인 구축",
-          "영문 구단/선수명을 방송 표준 한국어로 자동 변환 및 구단 엠블럼 깨짐 자동 복구",
-          "커뮤니티 악성 게시글/댓글 실시간 판별 및 자동 블라인드 처리, 관리자 검토 큐 연동"
-        ]
-      },
-      {
-        area: "승부예측 시스템 및 트랜잭션 무결성 방어",
-        details: [
-          "경기 시작 1분 전까지 자유로운 예측 수정을 지원하고 킥오프 시점에 자동 마감되는 시간 기반 가드 구현",
-          "동시 투표 시 포인트 무결성을 보장하는 DB 트랜잭션 격리 및 정산 이력 테이블을 통한 중복 정산 멱등성(Idempotency) 이중 방어",
-          "실시간 홈/무/원정 투표 비율 기반 배당 배율 산출 및 포인트 랭킹 Top 3 UI 구현"
-        ]
-      },
-      {
-        area: "관리자 시뮬레이터 & 스코어 정합성 보정 도구",
-        details: [
-          "테스트 및 시연을 위해 더미 경기 생성, 스코어 조작, 강제 종료/정산을 원클릭으로 수행하는 어드민 모달 및 API 구축",
-          "외부 API 연동 시 발생하는 최종 스코어와 타임라인 상세 골 이벤트 불일치를 자동 감지하고 맞추는 2단계 정밀 보정 툴 개발"
-        ]
-      },
-      {
-        area: "PWA 모바일 패키징 & 앱 최적화",
-        details: [
-          "Web App Manifest 및 Service Worker(sw.js)를 구성하여 주소창 없는 Standalone 모바일 뷰 및 세로모드(Portrait) 고정",
-          "GitHub Pages SPA 새로고침 404 방지를 위해 HashRouter 기반 라우팅 및 뒤로가기 링크 핫픽스 적용"
+          "SMTP 프로토콜을 활용한 회원가입 이메일 인증 메일 발송 구현",
+          "사용자 인증 토큰 검증 흐름 실습"
         ]
       }
     ],
     troubleshooting: [
       {
-        issue: "외부 축구 API 연동 시 최종 스코어(2-1)와 타임라인 이벤트(골 기록 1개) 간 불일치 발생",
-        solution: "어드민 콘솔에 스코어-타임라인 검증 알고리즘을 도입하고, 누락된 이벤트를 자동 생성/보정하는 2단계 동기화 파이프라인을 구축하여 데이터 정합성 100% 확보"
+        issue: "처음 접한 데이터베이스 환경에서 페이지네이션 구현 중 원하는 데이터 위치를 제대로 가져오지 못하고 오류 원인을 찾기 어려웠던 문제 발생",
+        solution: "요청 전달부터 SQL 쿼리 실행까지 단계별 콘솔 로그를 출력하며 데이터 흐름을 추적하여, 페이지 계산 공식의 오차를 바로잡고 안정적인 페이징 로직 구축"
+      }
+    ],
+    reflection:
+      "게임에 대해 아는 것과 웹 구현은 별개임을 깊이 깨달았고, 처음 접한 DB 환경에서 AI의 도움 없이 페이지네이션을 구현하며 에러 원인을 찾지 못해 많이 헤맸던 기억이 있습니다. 하지만 이 경험 덕분에 현재는 디버깅 측면에서 에러의 원인을 정확하게 특정하는 실력을 갖추게 되었습니다."
+  },
+  {
+    id: "greenway",
+    title: "GreenWay",
+    subtitle: "네이버 지도 및 실시간 기상 API 기반 도심 공원 및 산책로 탐색 웰니스 웹 서비스",
+    period: "2026.07 ~ 2026.08",
+    role: "팀장 / 프론트엔드 환경 구축 / 네이버 지도 LBS 연동 / 날씨 위젯 / 플로팅 모달 / 배포 전담",
+    teamSize: "팀 프로젝트 (휴먼교육센터)",
+    category: "Frontend Web Application",
+    badges: ["React 19", "Vite", "Naver Maps API", "OpenWeatherMap API", "HTML5 Geolocation API", "react-rnd", "GitHub Pages"],
+    github: "https://github.com/PSK6262/Team_OneCode",
+    demo: "https://psk6262.github.io/Team_OneCode/",
+    thumbnail: "/images/projects/greenway.png",
+    images: [
+      {
+        label: "메인 지도 화면",
+        url: "/images/projects/greenway.png",
+        caption: "GreenWay 도심 산책로 및 둘레길 탐색 메인 비주얼"
       },
       {
-        issue: "승부예측 정산 시 동시 다발적 요청으로 인한 포인트 중복 지급 위험",
-        solution: "DB 트랜잭션 락과 함께 경기 상태 플래그 및 예측 이력 테이블 복합 인덱스를 활용한 멱등성 가드를 구축하여 다중 스케줄러 환경에서도 1회만 안전하게 정산되도록 개선"
+        label: "상세 정보 화면",
+        url: "/images/projects/greenway-detail.png",
+        caption: "산책로 코스 제원(길이·소요시간), 편의시설, 실시간 날씨 및 한줄평 후기 상세 뷰"
       }
-    ]
+    ],
+    summary:
+      "도심 속 공원과 산책로 정보를 네이버 지도 위에 시각화하고, 사용자 현재 위치 및 실시간 날씨 정보를 결합하여 맞춤형 산책 코스를 추천하는 반응형 웹 서비스입니다.",
+    whatMade: [
+      "네이버 지도(Naver Maps API) 기반 서울/도심 공원 및 둘레길 마커 시각화 및 인터랙션",
+      "HTML5 Geolocation API 기반 내 위치 중심 주변 산책로 탐색 기능",
+      "OpenWeatherMap API 기반 실시간 날씨, 기온, 산책 지수 상단 네비게이션 위젯",
+      "산책로 코스별 상세 제원(총 거리 km, 소요 시간, 난이도, 주요 경유지) 제공",
+      "브라우저 localStorage를 활용한 나만의 산책 코스 즐겨찾기 관리",
+      "지도 화면을 가리지 않고 자유롭게 드래그 및 크기 조절이 가능한 플로팅 뷰어(react-rnd)"
+    ],
+    whatDid: [
+      {
+        area: "팀 리딩 및 프론트엔드 아키텍처 / 배포 파이프라인 구축",
+        details: [
+          "팀장으로서 전체 개발 방향성을 수립하고, 팀원 간 변수명 및 디렉토리 구조를 프로젝트 착수 단계에서 통일하여 배포",
+          "Vite + React 19 기반 프로젝트 보일러플레이트 구축 및 ESLint 표준화",
+          "GitHub Pages 정적 호스팅 환경에서 새로고침 404 방지를 위해 HashRouter로 선제적 전환 및 배포 자동화",
+          "네이버 지도 API Key 등 외부 인증 키를 .env 환경변수로 안전하게 격리"
+        ]
+      },
+      {
+        area: "지도 및 위치 기반 서비스 (Naver Maps API & HTML5 Geolocation API) 개발",
+        details: [
+          "네이버 지도 객체 비동기 초기화 및 지도 중심점, 줌(Zoom), 드래그 라이프사이클 제어",
+          "HTML5 Geolocation API를 연동하여 사용자 위/경도 좌표를 획득하고 원클릭으로 내 위치 중심 이동 구현",
+          "산책로 데이터셋(parksData.js)을 파싱하여 지도 위 커스텀 마커 렌더링 및 팝업 이벤트 핸들링"
+        ]
+      },
+      {
+        area: "실시간 날씨 위젯 개발 (OpenWeatherMap API)",
+        details: [
+          "OpenWeatherMap API 연동으로 위/경도 기반 실시간 기온 및 날씨 아이콘 비동기 수집",
+          "글로벌 네비게이션 바 상단에 위젯 컴포넌트를 마운트하여 실시간 기상 상태 확인 가능하도록 구현"
+        ]
+      },
+      {
+        area: "인터랙티브 UI/UX 고도화 및 컴포넌트 모듈화",
+        details: [
+          "ListMain, Trail, ParkCard 컴포넌트 단위 분리 및 재사용성 향상",
+          "react-rnd 라이브러리를 활용하여 지도 화면에서 자유롭게 이동 및 크기 조절이 가능한 플로팅 상세 정보 패널 개발",
+          "ESC 키 입력 시 팝업 닫기, 검색창 원클릭 초기화 버튼, 검색어 공백 제거 예외 처리 적용",
+          "localStorage 기반 즐겨찾기 추가/삭제가 즉시 렌더링에 반영되는 반응형 상태 관리 구현"
+        ]
+      }
+    ],
+    troubleshooting: [
+      {
+        issue: "GitHub Pages 배포 후 서브 라우트 접속이나 새로고침 시 404 Not Found 에러 발생",
+        solution: "정적 호스팅 환경의 한계를 극복하기 위해 BrowserRouter를 HashRouter로 교체하여 클라이언트 사이드 해시(#) 라우팅을 확립, 별도 서버 설정 없이 안정적인 배포 완성"
+      },
+      {
+        issue: "지도 위의 고정형 인포윈도우가 주변 지도를 가려 탐색 흐름을 방해하는 UX 불편",
+        solution: "react-rnd를 도입하여 사용자가 지도를 보면서 원하는 위치로 창을 드래그하여 옮기거나 크기를 변경할 수 있는 플로팅 윈도우 UI를 구축하여 사용자 경험 대폭 개선"
+      }
+    ],
+    reflection:
+      "API 연동을 처음 접하며 언어적 장벽이나 데이터 호출 과정에서 헤매기도 했지만, AI의 도움을 받으며 이를 좋은 도구로 활용하는 법을 확실하게 알게 되었습니다. 특히 기획부터 결과 발표, 시연, API 연동까지 전부 혼자 도맡아 진행하느라 힘든 부분도 많았습니다. 하지만 모든 책임이 집중되는 상황 속에서도 프로젝트를 자연스럽게 해결해 내며 향후 어떤 업무든 주도적으로 완수할 수 있다는 자신감을 얻었습니다."
   },
   {
     id: "oasis",
-    title: "Team Oasis (오아시스)",
-    subtitle: "네이버 치지직 라이브 스트리밍 방송 & Steam API 연동 게임 종합 커뮤니티 플랫폼",
+    title: "5ASIS",
+    subtitle: "네이버 치지직 라이브 스트리밍 방송 및 Steam API 연동 게임 종합 커뮤니티 플랫폼",
     period: "2026.08 ~ 2026.09",
-    role: "백엔드 코어 인프라 / 치지직 API 실시간 파싱 / 게임 게시판 / 보안 인증 전담",
-    teamSize: "팀 프로젝트 (5인)",
-    category: "Full-Stack Web (Spring MVC + JSP)",
-    badges: ["Java 11", "Spring MVC 5.3", "MyBatis 3.5", "Oracle 19c", "Chzzk API", "JavaMail", "DBCP2"],
+    role: "기술팀장 / 백엔드 코어 인프라 / ERD 총괄 / 네이버 치지직 API 실시간 파싱 / 게시판 / 보안 인증 전담",
+    teamSize: "팀 프로젝트 (휴먼교육센터)",
+    category: "Full-Stack Web · Spring MVC & JSP",
+    badges: ["Java 11", "Spring MVC 5.3", "MyBatis 3.5", "Oracle 19c", "Naver Chzzk API", "Steam API", "JavaMail API", "DBCP2"],
+    github: "https://github.com/PSK6262/Team_5asis",
+    thumbnail: "/images/projects/5asis-main.jpg",
+    images: [
+      {
+        label: "메인 서비스 화면",
+        url: "/images/projects/5asis-main.jpg",
+        caption: "5ASIS 게이머 커뮤니티 인기 게임 TOP 6 및 실시간 방송/스팀 할인 메인 화면"
+      },
+      {
+        label: "게임 게시판",
+        url: "/images/projects/5asis-board.png",
+        caption: "인기글 랭킹 및 게임별/태그별 커뮤니티 게시판 상세 화면"
+      },
+      {
+        label: "통합 검색 화면",
+        url: "/images/projects/5asis-search.png",
+        caption: "MyBatis 동적 쿼리 기반 게시판·제목·내용·작성자 닉네임 통합 검색 결과 화면"
+      },
+      {
+        label: "ERD 다이어그램",
+        url: "/images/projects/5asis-erd.png",
+        caption: "기술팀장으로서 총괄 설계한 5ASIS 핵심 데이터베이스 ERD 구조"
+      }
+    ],
     summary:
       "네이버 치지직(CHZZK) 오픈 API를 실시간 연동하여 게임별 방송 중인 스트리머 정보를 제공하고, 스팀 게임 정보와 연계된 게임별/통합 게시판 및 안전한 계정 복구 시스템을 구현한 커뮤니티입니다.",
     whatMade: [
       "네이버 치지직(CHZZK) 오픈 API 기반 실시간 게임 방송 썸네일, 스트리머 정보, 시청자 수 연동 패널",
-      "스팀(Steam) 게임 연동 및 개별 게임 게시판 / 전체 통합(All) 게시판 분기 시스템",
-      "게시글 작성/수정/삭제, 댓글, 게시글 추천 이력(LikeHistory), 첨부파일 관리",
+      "Steam API 연동 및 개별 게임 게시판 / 전체 통합(All) 게시판 분기 시스템",
+      "게시글 작성/수정/삭제, 댓글, 게시글 추천 이력, 첨부파일 관리",
       "조회수/추천수 가중치 기반 실시간 인기 게시글 및 인기 게시판 랭킹 시스템",
-      "다차원 검색 엔진 (통합/제목/본문/작성자) 및 고성능 페이지네이션(PagingPosts)",
+      "다차원 검색 엔진 및 고성능 페이지네이션(PagingPosts)",
       "이메일 인증 기반 5분 만료 일회용 보안 토큰을 활용한 안전한 비밀번호 재설정 파이프라인"
     ],
     whatDid: [
       {
-        area: "백엔드 코어 아키텍처 및 Spring/MyBatis 인프라 구축",
+        area: "기술팀장 리딩 & 백엔드 코어 아키텍처 / Spring 인프라 구축",
         details: [
-          "Java 11 기반 Spring MVC 5.3, MyBatis 3.5, Oracle JDBC, DBCP2 커넥션 풀 메이븐(pom.xml) 의존성 설계",
+          "기술팀장으로서 ERD와 데이터베이스 구성을 총괄하고, 개발 초기 단계에서 필요한 DTO 구조를 사전에 정의하여 배포",
+          "Java 11 기반 Spring MVC 5.3, MyBatis 3.5, Oracle JDBC, DBCP2 커넥션 풀 메이븐 의존성 설계",
           "root-context.xml(DataSource, SqlSessionFactoryBean), servlet-context.xml, web.xml 전체 인프라 구성",
           "UserInfo, Post, GameList, Comments, PagingPosts 등 전 계층 DTO 표준화"
         ]
@@ -194,19 +310,19 @@ export const projectsData = [
           "개별 게임 게시판 및 전체 통합 게시판(/board/all) 동적 라우팅 및 뷰 분기 로직 구현",
           "통합 게시판에서 특정 게시글 클릭 시 해당 게임 카테고리로 안전하게 이동하는 리다이렉트 핸들링",
           "현재 페이지, 블록 수, 한 번에 볼 개수를 동적 계산하고 파라미터를 보존하는 PagingPosts 엔진 구현",
-          "MyBatis Dynamic Query(<if>, <choose>)를 활용한 다중 조건 검색 및 댓글 수 스칼라 서브쿼리 최적화로 N+1 방지"
+          "MyBatis Dynamic Query를 활용한 다중 조건 검색 및 댓글 수 스칼라 서브쿼리 최적화로 N+1 방지"
         ]
       },
       {
-        area: "이메일 인증 & 5분 만료 토큰 기반 계정 복구 보안 시스템",
+        area: "JavaMail API 기반 이메일 인증 및 5분 만료 토큰 계정 복구 보안 시스템",
         details: [
-          "javax.mail 기반 SMTP 메일 발송 유틸(SendMail.java, UserMailService) 개발",
+          "javax.mail 기반 SMTP 메일 발송 유틸 개발",
           "비밀번호 찾기 시 암호학적 난수 토큰을 생성하여 DB에 적재하고, 5분 타임아웃 만료 여부를 정밀 검증",
           "전용 보안 인터셉터(PwResetModeInterceptor, LoginInterceptor)를 제작하여 비정상 URL 접근 및 토큰 변조 원천 차단"
         ]
       },
       {
-        area: "아키텍처 리팩토링 및 클린 코드 (SRP 원칙)",
+        area: "아키텍처 리팩토링 및 클린 코드 수립",
         details: [
           "DAO에 혼재되어 있던 복잡한 비즈니스 로직을 Service 레이어로 전면 이관하여 단일 책임 원칙(SRP) 확립",
           "자주 사용되는 상수 및 세션 키를 CommonCode.java로 중앙 집중화하여 유지보수성 극대화"
@@ -222,103 +338,168 @@ export const projectsData = [
         issue: "비밀번호 찾기 링크 클릭 시 권한 검증 없이 URL로 재설정 페이지에 직접 접근 가능한 보안 취약점",
         solution: "Spring HandlerInterceptor(PwResetModeInterceptor)를 구현하여 이메일 토큰 유효성 검증을 통과한 세션에만 페이지 접근을 허용하고, 5분 초과 시 즉시 만료 처리"
       }
-    ]
+    ],
+    reflection:
+      "2022년보다 나은 프로젝트를 목표로 삼았으나 팀원을 케어하느라 순탄치만은 않았습니다. 제가 설계한 ERD뿐만 아니라 전반적인 개발 지식에 대해 “이것이 왜 필요한가” 등을 묻는 팀원에게, 이를 설명하는 과정에서 두세 번 더 공부하게 되어 지식적인 측면이 크게 늘어났습니다. 기능적으로 더 넣지 못한 아쉬움은 있지만, 다른 사람을 가르치고 이끌며 깊이 있게 성장함을 확인할 수 있었습니다."
   },
   {
-    id: "greenway",
-    title: "GreenWay (그린웨이)",
-    subtitle: "네이버 지도 & 실시간 기상 API 기반 도심 공원 및 산책로(Trail) 탐색 웰니스 웹 서비스",
-    period: "2026.06 ~ 2026.07",
-    role: "프론트엔드 환경 구축 / 네이버 지도 LBS 연동 / 날씨 위젯 / 플로팅 모달 / 배포 전담",
-    teamSize: "팀 프로젝트 (3인)",
-    category: "Frontend Web Application",
-    badges: ["React 19", "Vite", "Naver Maps API", "OpenWeatherMap", "Geolocation", "react-rnd", "GitHub Pages"],
+    id: "buildup",
+    title: "PL:UG",
+    subtitle: "EPL 실시간 데이터 분석, Gemini AI 보조 및 승부예측 축구 커뮤니티 플랫폼",
+    period: "2026.09 ~ 2026.10",
+    role: "기술팀장 / 풀스택 아키텍처 총괄 / AI 파이프라인 / 데이터 동기화 / 외부 API 연동 전담",
+    teamSize: "팀 프로젝트 (휴먼교육센터)",
+    category: "Full-Stack Web & Mobile PWA",
+    badges: ["React 19", "Spring MVC", "Football-Data.org API", "Google Gemini AI API", "Oracle 19c", "Redux Toolkit", "PWA", "MyBatis"],
+    github: "https://github.com/PSK6262/Team_BuildUp",
+    demo: "https://psk6262.github.io/Team_BuildUp/#/plug/mainpage",
+    thumbnail: "/images/projects/plug-main.png",
+    images: [
+      {
+        label: "메인 인터랙션 화면",
+        url: "/images/projects/plug-main.png",
+        caption: "PL:UG EPL 20개 구단 인터랙티브 엠블럼 휠 및 운명의 팀 탐색 메인 비주얼"
+      },
+      {
+        label: "경기 일정 화면",
+        url: "/images/projects/plug-schedule.png",
+        caption: "Football-Data.org API 기반 EPL 경기 일정 실시간 동기화, 시즌·월별·구단별 필터링 화면"
+      },
+      {
+        label: "승부예측 화면",
+        url: "/images/projects/plug-predict.png",
+        caption: "EPL 경기 승부예측 및 실시간 투표율·배당 포인트, 유저 승부예측 랭킹(Top 3) 화면"
+      },
+      {
+        label: "리그 & 선수 랭킹",
+        url: "/images/projects/plug-ranking.png",
+        caption: "20개 구단 공식 순위표(승점·골득실) 및 득점·도움·공격포인트·클린시트 세부 지표 대시보드"
+      },
+      {
+        label: "관리자 센터 대시보드",
+        url: "/images/projects/plug-admin-dashboard.png",
+        caption: "PL:UG 관리자 센터: 380경기 상태, 이벤트 불일치 검증, AI 블라인드 제재 및 회원 통합 모니터링 콘솔"
+      },
+      {
+        label: "관리자 센터 포인트 변동 이력",
+        url: "/images/projects/plug-admin-audit.png",
+        caption: "관리자 센터 전용: 승부예측 포인트 지급 및 중복 지급 방지 처리, 실시간 포인트 변동 이력 화면"
+      }
+    ],
     summary:
-      "도심 속 공원과 산책로 정보를 네이버 지도 위에 시각화하고, 사용자 현재 위치 및 실시간 날씨 정보를 결합하여 맞춤형 산책 코스를 추천하는 반응형 웹 서비스입니다.",
+      "프리미어리그(EPL) 20개 구단의 경기 일정, 결과, 선수 스쿼드를 Football-Data.org API로 실시간 자동 수집하고, Google Gemini AI API를 접목한 선수 포지션 분류 및 커뮤니티 유해성 모더레이션을 구현한 축구 종합 플랫폼입니다.",
     whatMade: [
-      "네이버 지도(Naver Maps API) 기반 서울/도심 공원 및 둘레길 마커 시각화 및 인터랙션",
-      "HTML5 Geolocation API 기반 내 위치 중심 주변 산책로 탐색 기능",
-      "OpenWeatherMap API 기반 실시간 날씨, 기온, 산책 지수 상단 네비게이션 위젯",
-      "산책로 코스별 상세 제원(총 거리 km, 소요 시간, 난이도, 주요 경유지) 제공",
-      "브라우저 localStorage를 활용한 나만의 산책 코스 즐겨찾기(Favorites) 관리",
-      "지도 화면을 가리지 않고 자유롭게 드래그 및 크기 조절이 가능한 플로팅 뷰어(react-rnd)"
+      "Football-Data.org API 기반 EPL 20개 구단 및 경기 일정/결과 실시간 자동 동기화 (스프링 스케줄러 & UTC-KST 시차 보정)",
+      "Google Gemini AI API 기반 지능형 파이프라인 (비정형 선수 15개 세부 포지션 매핑, 한글화, 커뮤니티 자동 모더레이션)",
+      "승부예측 & 포인트 베팅 시스템 (실시간 배당률 계산, 경기 시작 전 예측 수정 지원, 포인트 중복 지급 방지)",
+      "나만의 스쿼드 빌더 및 전술 시뮬레이션 (커스텀 포메이션, 유저 팀 간 가상 대결 및 쿨타임 제어)",
+      "관리자 통합 제어 콘솔 (테스트용 경기 시뮬레이터, 스코어와 골 기록 불일치 자동 보정 도구)",
+      "Progressive Web App(PWA) 모바일 패키징 (오프라인 캐싱, 세로모드 고정, Standalone 전체화면)"
     ],
     whatDid: [
       {
-        area: "프론트엔드 아키텍처 및 배포 파이프라인 구축",
+        area: "기술팀장 리딩 & 풀스택 아키텍처 및 공통 통신 규격 수립",
         details: [
-          "Vite + React 19 기반 프로젝트 보일러플레이트 구축 및 ESLint, 디렉토리 구조 표준화",
-          "GitHub Pages 정적 호스팅 환경에서 새로고침 404 방지를 위해 HashRouter로 선제적 전환 및 gh-pages 배포 파이프라인 구성",
-          "네이버 지도 API Key 등 외부 인증 키를 .env 환경변수로 안전하게 격리"
+          "기술팀장으로서 Spring MVC 백엔드 및 React 19 + Redux Toolkit 프론트엔드 초기 환경 및 디렉토리 구조 전면 셋업",
+          "ApiResponse<T>, ResultCode, CommonCode를 도입하여 프론트-백엔드 간 RESTful 통신 인터페이스 표준화",
+          "글로벌 CORS 설정 일원화 및 환경변수 기반 JWT Secret Key 격리, local.properties 분리로 빌드 안정성 확보"
         ]
       },
       {
-        area: "지도 및 위치 기반 서비스 (LBS) 개발",
+        area: "외부 축구 API(Football-Data.org API) 연동 및 실시간 스케줄러 동기화",
         details: [
-          "네이버 지도 객체 비동기 초기화 및 지도 중심점, 줌(Zoom), 드래그 라이프사이클 제어",
-          "HTML5 Geolocation API를 연동하여 사용자 위/경도 좌표를 획득하고 원클릭으로 내 위치 중심 이동 구현",
-          "산책로 데이터셋(parksData.js)을 파싱하여 지도 위 커스텀 마커 렌더링 및 팝업 이벤트 핸들링"
+          "Football-Data.org API를 활용한 20개 구단 정보, 경기 일정, 순위표, 선수 스쿼드 데이터 수집 파이프라인 개발",
+          "@Scheduled 기반 실시간 자동 갱신 및 HttpClient 커넥션 풀 재사용 적용",
+          "UTC 기준 경기 시각을 한국 시간(KST)으로 자동 변환하고 자정 전후 시차 왜곡을 보정하는 알고리즘 구현",
+          "기존 Insecure TrustManager(SSL 우회)를 전면 제거하고 표준 SSL 핸드셰이크 체계 확립"
         ]
       },
       {
-        area: "실시간 날씨 위젯 (WeatherWidget.jsx) 개발",
+        area: "Google Gemini AI API를 활용한 데이터 분류 및 커뮤니티 관리",
         details: [
-          "OpenWeatherMap API 연동으로 위/경도 기반 실시간 기온 및 날씨 아이콘 비동기 수집",
-          "글로벌 네비게이션 바 상단에 위젯 컴포넌트를 마운트하여 실시간 기상 상태 확인 가능하도록 구현"
+          "Google Gemini AI API 프롬프트 엔지니어링을 통해 단순 4대 포지션(GK, DF, MF, FW)을 15개 세부 포지션(LWB, CDM, CAM, RW 등)으로 정밀 분류",
+          "Gemini API 연동을 통한 영문 구단/선수명의 방송 표준 한국어 자동 변환 및 구단 엠블럼 깨짐 자동 복구",
+          "Gemini AI API 기반 커뮤니티 악성 게시글/댓글 실시간 판별 및 자동 숨김(블라인드) 처리"
         ]
       },
       {
-        area: "인터랙티브 UI/UX 고도화 & 컴포넌트 모듈화",
+        area: "승부예측 시스템 및 포인트 중복 지급 방지",
         details: [
-          "ListMain.jsx, Trail.jsx, ParkCard.jsx 컴포넌트 단위 분리 및 재사용성 향상",
-          "react-rnd 라이브러리를 활용하여 지도 화면에서 자유롭게 이동 및 크기 조절이 가능한 플로팅 상세 정보 패널 개발",
-          "ESC 키 입력 시 팝업 닫기, 검색창 원클릭 초기화('X') 버튼, 검색어 공백(trim) 제거 핫픽스 적용",
-          "localStorage 기반 즐겨찾기 추가/삭제가 즉시 렌더링에 반영되는 반응형 상태 관리 구현"
+          "경기 시작 1분 전까지 자유롭게 예측을 수정할 수 있고, 킥오프 시점에 자동 마감되는 시간 제어 로직 구현",
+          "많은 유저가 동시에 참여해도 오류가 없도록 DB 트랜잭션을 적용하고, 이미 정산된 내역인지 확인하여 포인트 중복 지급을 안전하게 차단",
+          "실시간 홈/무/원정 투표 비율에 따른 배당률 계산 및 포인트 랭킹 Top 3 UI 구현"
+        ]
+      },
+      {
+        area: "관리자 시뮬레이터 및 경기 데이터 자동 일치 도구",
+        details: [
+          "테스트 및 시연을 위해 가상 경기 생성, 점수 조작, 강제 종료 및 정산을 원클릭으로 수행하는 관리자 전용 기능 구축",
+          "외부 API에서 가져온 최종 점수와 상세 골 기록이 서로 다를 경우, 이를 자동으로 감지하여 일치시켜 주는 데이터 보정 도구 개발"
+        ]
+      },
+      {
+        area: "PWA 모바일 패키징 및 앱 최적화",
+        details: [
+          "Web App Manifest 및 Service Worker를 구성하여 주소창 없는 모바일 전체화면 뷰 및 세로모드 고정",
+          "GitHub Pages SPA 새로고침 404 방지를 위해 HashRouter 기반 라우팅 적용"
         ]
       }
     ],
     troubleshooting: [
       {
-        issue: "GitHub Pages 배포 후 서브 라우트 접속이나 새로고침 시 404 Not Found 에러 발생",
-        solution: "정적 호스팅 환경의 한계를 극복하기 위해 BrowserRouter를 HashRouter로 교체하여 클라이언트 사이드 해시(#) 라우팅을 확립, 별도 서버 설정 없이 안정적인 배포 완성"
+        issue: "외부 축구 API에서 경기 데이터를 가져올 때, 최종 점수(예: 2-1)와 상세 골 기록(예: 골 1개만 수신)이 서로 맞지 않는 데이터 불일치 발생",
+        solution: "관리자 화면에서 점수와 골 기록이 일치하는지 자동으로 확인하고, 빠진 골 기록이 있다면 자동으로 채워 넣어 데이터가 정확히 일치하도록 보정 로직 구현"
       },
       {
-        issue: "지도 위의 고정형 인포윈도우가 주변 지도를 가려 탐색 흐름을 방해하는 UX 불편",
-        solution: "react-rnd를 도입하여 사용자가 지도를 보면서 원하는 위치로 창을 드래그하여 옮기거나 크기를 변경할 수 있는 플로팅 윈도우 UI를 구축하여 사용자 경험 대폭 개선"
+        issue: "승부예측 결과를 정산할 때, 동시에 여러 처리가 겹치면 포인트가 두 번 이상 중복으로 지급될 수 있는 위험 발생",
+        solution: "정산 작업을 하나의 단위(DB 트랜잭션)로 묶고, 이미 정산된 경기인지 상태를 먼저 확인하는 중복 방지 로직을 구축하여 어떤 상황에서도 포인트가 딱 1번만 안전하게 지급되도록 해결"
       }
-    ]
+    ],
+    reflection:
+      "기술팀장으로서 대규모 실시간 축구 데이터와 생성형 AI를 하나의 서비스에 연동하며, 데이터가 어긋나지 않도록 맞추고 포인트 오류를 방지하는 등 실제 서비스에서 마주하는 복잡한 문제들을 깊이 경험했습니다. 프론트엔드와 백엔드가 원활히 소통할 수 있는 표준 규격의 중요성을 체감했고, 팀의 기술 중심으로서 발생한 문제를 끝까지 추적해 해결하는 끈기를 길렀습니다."
   }
 ];
 
 export const educationData = {
   education: [
     {
-      institution: "대학교 (학력 틀)",
-      major: "컴퓨터공학 / 관련 전공",
-      period: "20XX.03 ~ 20XX.02 (졸업/예정)",
-      description: "자료구조, 알고리즘, 데이터베이스, 네트워크 등 컴퓨터 사이언스 기초 이수 (필요 시 수정)"
+      institution: "국립안동대학교",
+      major: "컴퓨터공학과 (학사 졸업)",
+      period: "2016.03 ~ 2022.07",
+      description: "컴퓨터공학 학사 학위 취득. 자료구조, 알고리즘, 데이터베이스, 네트워크, 운영체제 등 컴퓨터 사이언스 기초 체계 이수"
     }
   ],
   trainings: [
     {
-      program: "풀스택 웹 개발자 양성 과정 (교육 수료 틀)",
-      institution: "전문 교육 기관 / 국비지원",
-      period: "2026.XX ~ 2026.XX (수료)",
-      description: "Java, Spring Framework, React, Oracle DB 기반의 웹 애플리케이션 프로젝트 3회 완수"
+      program: "일본 현지 어학연수 과정",
+      institution: "메로스 언어학원 (Meros Language School, Tokyo)",
+      period: "2023.04 ~ 2023.07",
+      description: "JLPT N1 취득 후 일본 도쿄 현지 어학연수 이수. 실전 비즈니스 일본어 회화 및 원활한 다문화 커뮤니케이션 역량 체득"
+    },
+    {
+      program: "Java Spring 기반 스마트웹 & 콘텐츠 풀스택 개발자 양성과정",
+      institution: "휴먼교육센터",
+      period: "2026.04 ~ 2026.10",
+      description: "Java, Spring Framework, React, Oracle SQL 기반의 웹 애플리케이션 프로젝트 3회 완수 및 팀장/기술팀장 역할 수행"
     }
   ],
   certifications: [
     {
-      name: "정보처리기사 (자격증 틀)",
+      name: "정보처리기사",
       issuer: "한국산업인력공단",
-      date: "20XX.XX",
-      status: "취득 / 준비중"
+      date: "2026.05",
+      status: "취득"
     },
     {
-      name: "SQLD (SQL 개발자 자격증 틀)",
-      issuer: "한국데이터산업진흥원",
-      date: "20XX.XX",
-      status: "취득 / 준비중"
+      name: "JLPT N1 (일본어능력시험 1급)",
+      issuer: "일본국제교류기금 (Japan Foundation)",
+      date: "취득",
+      status: "합격"
     }
-  ]
+  ],
+  military: {
+    title: "병역 사항",
+    status: "군필",
+    period: "2017년 ~ 2019년"
+  }
 };

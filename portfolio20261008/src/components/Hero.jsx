@@ -12,8 +12,7 @@ export default function Hero() {
             풀스택 & 백엔드/프론트엔드 개발자
           </div>
           <h1 className="hero-title">
-            안녕하세요, <br />
-            <span className="text-gradient">{profileData.name}</span> 입니다.
+            안녕하세요, <span className="text-gradient">{profileData.name}</span> 입니다.
           </h1>
           <p className="hero-role-tag">{profileData.engName} | {profileData.role}</p>
           <p className="hero-headline">{profileData.headline}</p>
@@ -21,7 +20,7 @@ export default function Hero() {
           <div className="hero-bio-list">
             {profileData.bio.map((line, idx) => (
               <div key={idx} className="hero-bio-item">
-                <span className="bio-bullet">▹</span>
+                <span className="bio-bullet">-</span>
                 <span>{line}</span>
               </div>
             ))}
@@ -29,13 +28,13 @@ export default function Hero() {
 
           <div className="hero-actions">
             <a href="#projects" className="btn btn-primary">
-              프로젝트 포트폴리오 보기
+              프로젝트 보기
             </a>
             <a href="#skills" className="btn btn-secondary">
-              보유 기술 스택
+              기술 스택
             </a>
             <a href={profileData.contact.github} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
-              GitHub ↗
+              GitHub
             </a>
           </div>
         </div>
@@ -61,13 +60,8 @@ export default function Hero() {
             {/* Quick Status Bar */}
             <div className="photo-status-box">
               <div className="status-item">
-                <span className="status-label">주요 프로젝트</span>
-                <span className="status-value text-accent">3건 완수</span>
-              </div>
-              <div className="status-divider"></div>
-              <div className="status-item">
                 <span className="status-label">주요 포커스</span>
-                <span className="status-value">실시간 데이터 & AI</span>
+                <span className="status-value text-accent">실시간 데이터 & AI</span>
               </div>
             </div>
           </div>

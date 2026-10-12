@@ -13,29 +13,27 @@ export default function Navbar({ activeSection }) {
   }, []);
 
   const navLinks = [
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Contact', href: '#contact' },
+    { name: '소개', id: 'about', href: '#about' },
+    { name: '프로젝트', id: 'projects', href: '#projects' },
+    { name: '기술 스택', id: 'skills', href: '#skills' },
+    { name: '학력 및 이력', id: 'experience', href: '#experience' },
+    { name: '연락처', id: 'contact', href: '#contact' },
   ];
 
   return (
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <a href="#hero" className="nav-logo">
-          <span className="logo-accent">&lt;</span>
-          PSK
-          <span className="logo-accent">.Portfolio /&gt;</span>
+          박성국 <span className="logo-accent">웹 포트폴리오</span>
         </a>
 
         {/* Desktop Nav */}
         <nav className="nav-links">
           {navLinks.map((link) => (
             <a
-              key={link.name}
+              key={link.id}
               href={link.href}
-              className={`nav-link ${activeSection === link.name.toLowerCase() ? 'active' : ''}`}
+              className={`nav-link ${activeSection === link.id ? 'active' : ''}`}
             >
               {link.name}
             </a>
@@ -46,7 +44,7 @@ export default function Navbar({ activeSection }) {
             rel="noopener noreferrer"
             className="nav-btn-github"
           >
-            GitHub ↗
+            GitHub
           </a>
         </nav>
 
@@ -65,7 +63,7 @@ export default function Navbar({ activeSection }) {
         <div className="mobile-menu">
           {navLinks.map((link) => (
             <a
-              key={link.name}
+              key={link.id}
               href={link.href}
               className="mobile-link"
               onClick={() => setMobileMenuOpen(false)}
@@ -80,7 +78,7 @@ export default function Navbar({ activeSection }) {
             className="mobile-link mobile-link-github"
             onClick={() => setMobileMenuOpen(false)}
           >
-            GitHub Profile ↗
+            GitHub 프로필 ↗
           </a>
         </div>
       )}
