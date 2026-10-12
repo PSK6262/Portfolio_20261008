@@ -87,6 +87,13 @@ export default function Hero() {
                 <span className="status-value text-accent">풀스택 웹 & AI 파이프라인</span>
               </div>
             </div>
+
+            {/* Photo Notice */}
+            {profileData.photoNotice && (
+              <p className="photo-notice-text">
+                {profileData.photoNotice}
+              </p>
+            )}
           </div>
         </div>
       </div>

@@ -27,10 +27,11 @@ export const profileData = {
     "여러 차례 팀장 및 기술팀장으로서 팀원들과 방향을 맞추고 책임감 있게 프로젝트를 완수해 왔습니다."
   ],
   profileImage: "/images/profile.png",
+  photoNotice: "※ 추후 고화질 사진으로 교체 예정",
   photoPlaceholder: {
     title: "프로필 사진",
     subtitle: "박성국 (Full-Stack Developer)",
-    hint: "추후 고화질 사진 파일로 언제든 교체 가능합니다."
+    hint: "※ 추후 고화질 사진으로 교체 예정"
   },
   contact: {
     email: "Societe62@gmail.com",

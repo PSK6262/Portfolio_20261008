@@ -477,6 +477,14 @@ a {
   background: var(--border-color);
 }
 
+.photo-notice-text {
+  font-size: 11px;
+  color: var(--text-dim);
+  text-align: center;
+  margin-top: 10px;
+  letter-spacing: -0.2px;
+}
+
 /* ==========================================================================
    Section Common
    ========================================================================== */
