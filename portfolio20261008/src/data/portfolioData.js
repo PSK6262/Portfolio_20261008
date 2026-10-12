@@ -26,10 +26,11 @@ export const profileData = {
     "Spring MVC 기반 백엔드 아키텍처와 React 프론트엔드 환경을 두루 경험하며, 동시성 제어, 트랜잭션 무결성, 클린 코드(단일 책임 원칙)를 중시합니다.",
     "여러 차례 팀장 및 기술팀장으로서 팀원들과 방향을 맞추고 책임감 있게 프로젝트를 완수해 왔습니다."
   ],
+  profileImage: "/images/profile.png",
   photoPlaceholder: {
-    title: "프로필 사진 영역",
-    subtitle: "src/assets/profile.jpg 로 대체 가능",
-    hint: "추후 본인 사진 파일을 assets 폴더에 넣고 경로를 교체하세요."
+    title: "프로필 사진",
+    subtitle: "박성국 (Full-Stack Developer)",
+    hint: "추후 고화질 사진 파일로 언제든 교체 가능합니다."
   },
   contact: {
     email: "Societe62@gmail.com",

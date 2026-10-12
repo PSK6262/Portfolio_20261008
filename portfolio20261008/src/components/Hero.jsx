@@ -1,5 +1,6 @@
 import React from 'react';
 import { profileData } from '../data/portfolioData';
+import { getAssetUrl } from '../utils/assetUrl';
 
 export default function Hero() {
   return (
@@ -39,12 +40,28 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right: Photo Placeholder Area */}
+        {/* Right: Profile Photo Area */}
         <div className="hero-photo-wrapper">
           <div className="photo-card">
-            <div className="photo-frame">
-              {/* 사용자가 나중에 본인 사진을 넣을 수 있는 자리 */}
-              <div className="photo-placeholder">
+            <div className={`photo-frame ${profileData.profileImage ? 'has-photo' : ''}`}>
+              {profileData.profileImage ? (
+                <img
+                  src={getAssetUrl(profileData.profileImage)}
+                  alt={`${profileData.name} 프로필 사진`}
+                  className="photo-img"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    if (e.target.nextElementSibling) {
+                      e.target.nextElementSibling.style.display = 'flex';
+                    }
+                  }}
+                />
+              ) : null}
+
+              <div
+                className="photo-placeholder"
+                style={{ display: profileData.profileImage ? 'none' : 'flex' }}
+              >
                 <div className="photo-placeholder-icon">
                   <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
@@ -56,12 +73,18 @@ export default function Hero() {
                 <span className="placeholder-tag">사진 등록 대기</span>
               </div>
             </div>
-            
+
+            {/* Profile Info Bar */}
+            <div className="photo-profile-info">
+              <span className="photo-name">{profileData.name}</span>
+              <span className="photo-role">{profileData.role}</span>
+            </div>
+
             {/* Quick Status Bar */}
             <div className="photo-status-box">
               <div className="status-item">
                 <span className="status-label">주요 포커스</span>
-                <span className="status-value text-accent">실시간 데이터 & AI</span>
+                <span className="status-value text-accent">풀스택 웹 & AI 파이프라인</span>
               </div>
             </div>
           </div>
