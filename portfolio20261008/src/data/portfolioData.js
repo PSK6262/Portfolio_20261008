@@ -488,7 +488,7 @@ export const educationData = {
       name: "정보처리기사",
       issuer: "한국산업인력공단",
       date: "2026.05",
-      status: "취득"
+      status: "필기합격"
     },
     {
       name: "JLPT N1 (일본어능력시험 1급)",
