@@ -46,8 +46,8 @@ export const skillsData = [
     category: "Languages",
     items: [
       { name: "Java", level: "Advanced", desc: "객체지향 프로그래밍(OOP), 컬렉션 프레임워크, 멀티스레딩, 자바 표준 API" },
-      { name: "JavaScript (ES6+)", level: "Advanced", desc: "비동기 이벤트 루프(Promise, async/await), 모던 문법, DOM 제어" },
-      { name: "SQL (Oracle / ANSI)", level: "Advanced", desc: "복합 쿼리 작성, 조인 최적화, DDL/DML, 트랜잭션 제어" },
+      { name: "JavaScript", level: "Advanced", desc: "비동기 이벤트 루프(Promise, async/await), DOM 제어 및 비동기 처리" },
+      { name: "Oracle SQL", level: "Advanced", desc: "복합 쿼리 작성, 조인 최적화, DDL/DML, 트랜잭션 제어" },
       { name: "C / C++", level: "Intermediate", desc: "자료구조, 알고리즘, 메모리 구조(포인터) 및 CS 기본기" },
       { name: "Python", level: "Intermediate", desc: "데이터 수집 및 파싱, 스크립팅, 업무 자동화" }
     ]
@@ -57,7 +57,7 @@ export const skillsData = [
     items: [
       { name: "Java", level: "Advanced", desc: "객체지향 설계, 컬렉션 프레임워크, 멀티스레딩" },
       { name: "Spring Framework", level: "Advanced", desc: "Spring MVC 코어 아키텍처, IoC/DI, AOP, HandlerInterceptor" },
-      { name: "MyBatis 3.5", level: "Advanced", desc: "Dynamic Query, ResultMap 매핑, 서브쿼리 최적화" },
+      { name: "MyBatis", level: "Advanced", desc: "Dynamic Query, ResultMap 매핑, 서브쿼리 최적화" },
       { name: "RESTful API", level: "Advanced", desc: "ApiResponse 표준화, HTTP 상태 코드 매핑" },
       { name: "JSP / Servlet", level: "Advanced", desc: "MVC Model 2 아키텍처, 서블릿 라이프사이클" },
       { name: "Apache Tomcat", level: "Intermediate", desc: "서블릿 컨테이너 구성 및 WAR 배포" },
@@ -69,19 +69,19 @@ export const skillsData = [
     items: [
       { name: "React", level: "Advanced", desc: "컴포넌트 라이프사이클, 훅(Hooks), 모듈화" },
       { name: "Redux Toolkit", level: "Advanced", desc: "전역 상태 관리, 슬라이스 설계, 세션 영속화" },
-      { name: "JavaScript (ES6+)", level: "Advanced", desc: "비동기 처리(Promise/async-await), 모던 문법" },
+      { name: "JavaScript", level: "Advanced", desc: "비동기 처리(Promise/async-await), 컴포넌트 로직 구현" },
       { name: "Vite", level: "Intermediate", desc: "모던 번들러 구성, HMR, 최적화" },
-      { name: "React Router v7", level: "Intermediate", desc: "SPA 라우팅, HashRouter 기반 404 방어" },
+      { name: "React Router", level: "Intermediate", desc: "SPA 라우팅, HashRouter 기반 404 방어" },
       { name: "PWA", level: "Intermediate", desc: "Service Worker, Web App Manifest, Standalone 앱" },
-      { name: "CSS3 / Tailwind", level: "Advanced", desc: "반응형 레이아웃, 모던 UI/UX, Framer Motion" }
+      { name: "CSS / Tailwind", level: "Advanced", desc: "반응형 레이아웃, 모던 UI/UX, Framer Motion" }
     ]
   },
   {
     category: "Database & Security",
     items: [
-      { name: "Oracle Database 19c", level: "Intermediate", desc: "관계형 모델링, 트랜잭션 격리, 락 제어" },
+      { name: "Oracle Database", level: "Intermediate", desc: "관계형 모델링, 트랜잭션 격리, 락 제어" },
       { name: "H2 Database", level: "Intermediate", desc: "인메모리/파일 DB 구성 및 테스트 환경 구축" },
-      { name: "Commons DBCP2", level: "Intermediate", desc: "커넥션 풀 최적화 및 DataSource 설정" },
+      { name: "Apache DBCP", level: "Intermediate", desc: "커넥션 풀 최적화 및 DataSource 설정" },
       { name: "SQL 튜닝", level: "Intermediate", desc: "서브쿼리 N+1 방어, 조인 최적화, 페이징" },
       { name: "JWT", level: "Advanced", desc: "Stateless 인증/인가, 환경변수 비밀키 격리" },
       { name: "SHA-256 + Per-User Salt", level: "Advanced", desc: "키 스트레칭 기반 비밀번호 단방향 암호화" }
@@ -116,8 +116,8 @@ export const projectsData = [
     title: "GAMER PARTY",
     subtitle: "MVC 패턴 기반 기초 웹 아키텍처 및 H2DB 연동 게임 커뮤니티 사이트",
     period: "2021.11 ~ 2021.12",
-    role: "팀장 / 전반적인 MVC 구조 설계 / H2DB CRUD 및 사용자 인증(JavaMail API) 전담",
-    teamSize: "학과 팀 프로젝트",
+    role: "단독 개발 / 전반적인 MVC 구조 설계 / H2DB CRUD 및 사용자 인증(JavaMail API) 전담",
+    teamSize: "학과 프로젝트",
     category: "Academic Web Project · JSP & MVC",
     badges: ["JSP", "Servlet", "Apache Tomcat", "H2 Database", "JavaMail API", "MVC Pattern"],
     github: "https://github.com/PSK6262/2022Web",
@@ -252,7 +252,7 @@ export const projectsData = [
     role: "기술팀장 / 백엔드 코어 인프라 / ERD 총괄 / 네이버 치지직 API 실시간 파싱 / 게시판 / 보안 인증 전담",
     teamSize: "팀 프로젝트 (휴먼교육센터)",
     category: "Full-Stack Web · Spring Framework & JSP",
-    badges: ["Java", "Spring Framework", "MyBatis", "Oracle 19c", "Naver Chzzk API", "Steam API", "JavaMail API", "DBCP2"],
+    badges: ["Java", "Spring Framework", "MyBatis", "Oracle Database", "Naver Chzzk API", "Steam API", "JavaMail API", "Apache DBCP"],
     github: "https://github.com/PSK6262/Team_5asis",
     thumbnail: "/images/projects/5asis-main.jpg",
     images: [
@@ -292,7 +292,7 @@ export const projectsData = [
         area: "기술팀장 리딩 & 백엔드 코어 아키텍처 / Spring 인프라 구축",
         details: [
           "기술팀장으로서 ERD와 데이터베이스 구성을 총괄하고, 개발 초기 단계에서 필요한 DTO 구조를 사전에 정의하여 배포",
-          "Java 기반 Spring Framework, MyBatis 3.5, Oracle JDBC, DBCP2 커넥션 풀 메이븐 의존성 설계",
+          "Java 기반 Spring Framework, MyBatis, Oracle JDBC, DBCP 커넥션 풀 메이븐 의존성 설계",
           "root-context.xml(DataSource, SqlSessionFactoryBean), servlet-context.xml, web.xml 전체 인프라 구성",
           "UserInfo, Post, GameList, Comments, PagingPosts 등 전 계층 DTO 표준화"
         ]
@@ -350,7 +350,7 @@ export const projectsData = [
     role: "기술팀장 / 풀스택 아키텍처 총괄 / AI 파이프라인 / 데이터 동기화 / 외부 API 연동 전담",
     teamSize: "팀 프로젝트 (휴먼교육센터)",
     category: "Full-Stack Web & Mobile PWA",
-    badges: ["React", "Spring Framework", "Football-Data.org API", "Google Gemini AI API", "Oracle 19c", "Redux Toolkit", "PWA", "MyBatis"],
+    badges: ["React", "Spring Framework", "Football-Data.org API", "Google Gemini AI API", "Oracle Database", "Redux Toolkit", "PWA", "MyBatis"],
     github: "https://github.com/PSK6262/Team_BuildUp",
     demo: "https://psk6262.github.io/Team_BuildUp/#/plug/mainpage",
     thumbnail: "/images/projects/plug-main.png",

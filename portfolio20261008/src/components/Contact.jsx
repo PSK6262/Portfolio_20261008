@@ -146,6 +146,26 @@ export default function Contact() {
               </div>
               <span className="contact-link-arrow">바로가기 ↗</span>
             </a>
+
+            {/* Direct Mail */}
+            <a
+              href={`mailto:${profileData.contact.email}`}
+              className="contact-link-card"
+            >
+              <div className="contact-link-info">
+                <div className="contact-link-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div className="contact-link-texts">
+                  <span className="contact-link-title">Direct Mail</span>
+                  <span className="contact-link-desc">채용 및 프로젝트 협업 문의</span>
+                </div>
+              </div>
+              <span className="contact-link-arrow">메일 쓰기 ↗</span>
+            </a>
           </div>
         </div>
       </div>
