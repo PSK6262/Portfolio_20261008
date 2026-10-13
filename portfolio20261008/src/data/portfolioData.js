@@ -58,10 +58,10 @@ export const skillsData = [
     category: "Backend",
     items: [
       { name: "Java", level: "Advanced", desc: "객체지향 설계, 컬렉션 프레임워크, 멀티스레딩" },
-      { name: "Spring Framework", level: "Advanced", desc: "Spring MVC 코어 아키텍처, IoC/DI, AOP, HandlerInterceptor" },
-      { name: "MyBatis", level: "Advanced", desc: "Dynamic Query, ResultMap 매핑, 서브쿼리 최적화" },
+      { name: "Spring Framework", level: "Advanced", desc: "Spring MVC 구조 설계, 의존성 주입(DI), 인터셉터 기반 권한 검증" },
+      { name: "MyBatis", level: "Advanced", desc: "동적 쿼리(Dynamic SQL), 객체 매핑, 서브쿼리 최적화" },
       { name: "RESTful API", level: "Advanced", desc: "ApiResponse 표준화, HTTP 상태 코드 매핑" },
-      { name: "JSP / Servlet", level: "Advanced", desc: "MVC Model 2 아키텍처, 서블릿 라이프사이클" },
+      { name: "JSP / Servlet", level: "Advanced", desc: "MVC Model 2 아키텍처, 서블릿 생명주기 관리" },
       { name: "Apache Tomcat", level: "Intermediate", desc: "서블릿 컨테이너 구성 및 WAR 배포" },
       { name: "JavaMail API", level: "Intermediate", desc: "SMTP 프로토콜 기반 보안 토큰 이메일 인증 발송" }
     ]
