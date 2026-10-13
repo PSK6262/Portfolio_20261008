@@ -11,9 +11,6 @@ export default function Projects() {
       <div className="section-header">
         <span className="section-eyebrow">PROJECT SHOWCASE</span>
         <h2 className="section-title">어떤 프로젝트를 해봤는가</h2>
-        <p className="section-subtitle">
-          실제 Git 커밋 기록 및 아키텍처 분석에 근거한 주요 프로젝트 상세 레퍼런스입니다.
-        </p>
         <div className="section-bar"></div>
       </div>
 

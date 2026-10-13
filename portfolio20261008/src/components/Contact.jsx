@@ -98,7 +98,7 @@ export default function Contact() {
             </div>
             <div>
               <h3 className="contact-card-title">온라인 채널 & 링크</h3>
-              <p className="contact-card-subtitle">코드 저장소 및 기술 문서 모음입니다.</p>
+              <p className="contact-card-subtitle">코드 저장소 및 직접 문의 채널입니다.</p>
             </div>
           </div>
 
@@ -124,9 +124,11 @@ export default function Contact() {
               <span className="contact-link-arrow">바로가기 ↗</span>
             </a>
 
-            {/* Direct Mail */}
+            {/* Direct Mail (웹 Gmail 작성창 새 탭으로 바로 열기) */}
             <a
-              href={`mailto:${profileData.contact.email}`}
+              href={`https://mail.google.com/mail/?view=cm&fs=1&to=${profileData.contact.email}&su=${encodeURIComponent('[채용/프로젝트 문의] 안녕하세요, 박성국님')}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="contact-link-card"
             >
               <div className="contact-link-info">
@@ -138,7 +140,7 @@ export default function Contact() {
                 </div>
                 <div className="contact-link-texts">
                   <span className="contact-link-title">Direct Mail</span>
-                  <span className="contact-link-desc">채용 및 프로젝트 협업 문의</span>
+                  <span className="contact-link-desc">채용 및 협업 문의 (웹 Gmail 바로 연결)</span>
                 </div>
               </div>
               <span className="contact-link-arrow">메일 쓰기 ↗</span>
