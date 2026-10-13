@@ -106,7 +106,6 @@ export const skillsData = [
     items: [
       { name: "Oracle Cloud (OCI)", level: "Intermediate", desc: "Compute Linux 인스턴스, VCN 보안 목록 및 Autonomous DB 연동" },
       { name: "Docker", level: "Intermediate", desc: "Dockerfile 기반 백엔드 컨테이너 빌드 및 배포 환경 표준화" },
-      { name: "Nginx", level: "Intermediate", desc: "리버스 프록시, 포트 포워딩 및 웹 서버 라우팅" },
       { name: "Git / GitHub", level: "Advanced", desc: "브랜치 전략, 이슈/PR 관리, 협업 파이프라인" },
       { name: "Eclipse / VS Code", level: "Advanced", desc: "통합 개발 환경 및 디버깅 툴링" },
       { name: "Maven / npm", level: "Intermediate", desc: "프로젝트 빌드 라이프사이클 및 의존성 패키지 관리" }
@@ -186,7 +185,7 @@ export const projectsData = [
           "Oracle Cloud Infrastructure(OCI) Compute Linux 인스턴스 환경 구성 및 VCN 가상 클라우드 네트워크 보안 목록(Security List) 인바운드/아웃바운드 포트 포워딩 설정",
           "OCI Autonomous Database(ATP) 전자지갑(Wallet) 보안 인증 연동 및 DB 접속 환경변수 컨테이너 격리 주입",
           "백엔드 애플리케이션을 Dockerfile 기반 경량 컨테이너 이미지로 빌드 및 실행 환경 표준화",
-          "Nginx 리버스 프록시 연동을 통한 무중단 포트 매핑, SSL 인증서 암호화 통신 및 정적 리소스 라우팅 구축",
+          "Docker 컨테이너 무중단 재빌드·재실행 파이프라인 구축",
           "PWA(Progressive Web App)를 Android Trusted Web Activity(TWA) 기반 릴리즈 APK로 패키징 및 서명(Keystore) 배포"
         ]
       },
