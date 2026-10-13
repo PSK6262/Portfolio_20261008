@@ -38,7 +38,6 @@ export const profileData = {
     phone: "010-2798-6852",
     birth: "1997.08.14",
     github: "https://github.com/PSK6262",
-    blog: "https://psk6262.github.io",
     location: "수도권(서울·경기), 충청권 및 대구 지역",
     locationDetail: "대면 출퇴근 및 원격 근무 가능 (합격 시 즉시 거주지 이전 가능)"
   }

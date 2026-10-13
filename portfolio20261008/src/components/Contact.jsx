@@ -124,29 +124,6 @@ export default function Contact() {
               <span className="contact-link-arrow">바로가기 ↗</span>
             </a>
 
-            {/* Blog / Tech Docs */}
-            <a
-              href={profileData.contact.blog}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="contact-link-card"
-            >
-              <div className="contact-link-info">
-                <div className="contact-link-icon-box">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="2" y1="12" x2="22" y2="12"></line>
-                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                  </svg>
-                </div>
-                <div className="contact-link-texts">
-                  <span className="contact-link-title">Tech Docs / Blog</span>
-                  <span className="contact-link-desc">psk6262.github.io</span>
-                </div>
-              </div>
-              <span className="contact-link-arrow">바로가기 ↗</span>
-            </a>
-
             {/* Direct Mail */}
             <a
               href={`mailto:${profileData.contact.email}`}
