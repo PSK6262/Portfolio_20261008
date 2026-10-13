@@ -84,9 +84,9 @@ export const skillsData = [
       { name: "Oracle Database", level: "Intermediate", desc: "관계형 모델링, 트랜잭션 격리, 락 제어" },
       { name: "H2 Database", level: "Intermediate", desc: "인메모리/파일 DB 구성 및 테스트 환경 구축" },
       { name: "Apache DBCP", level: "Intermediate", desc: "커넥션 풀 최적화 및 DataSource 설정" },
-      { name: "SQL 튜닝", level: "Intermediate", desc: "서브쿼리 N+1 방어, 조인 최적화, 페이징" },
+      { name: "SQL 쿼리 최적화", level: "Intermediate", desc: "서브쿼리를 활용한 반복 쿼리 최소화 및 페이징 처리" },
       { name: "JWT", level: "Advanced", desc: "Stateless 인증/인가, 환경변수 비밀키 격리" },
-      { name: "SHA-256 + Per-User Salt", level: "Advanced", desc: "키 스트레칭 기반 비밀번호 단방향 암호화" }
+      { name: "SHA-256", level: "Advanced", desc: "사용자별 고유 Salt 결합 및 키 스트레칭 기반 비밀번호 암호화" }
     ]
   },
   {
@@ -96,7 +96,6 @@ export const skillsData = [
       { name: "Football-Data.org API", level: "Advanced", desc: "EPL 실시간 데이터 수집, 스케줄러 동기화, UTC-KST 시차 보정" },
       { name: "OpenWeatherMap API", level: "Intermediate", desc: "실시간 기상 데이터 비동기 수집 및 날씨 위젯 연동" },
       { name: "Naver Chzzk API", level: "Advanced", desc: "실시간 라이브 방송 메타데이터 파싱 및 게임 매핑" },
-      { name: "Steam API", level: "Intermediate", desc: "스팀 상점 및 게임 메타데이터 연동 커뮤니티 구축" },
       { name: "Naver Maps API", level: "Intermediate", desc: "지도 라이프사이클 제어, 커스텀 마커, 위치기반서비스(LBS) 연동" },
       { name: "HTML5 Geolocation API", level: "Intermediate", desc: "디바이스 좌표 획득 및 내 위치 기반 탐색" }
     ]
@@ -308,7 +307,7 @@ export const projectsData = [
           "개별 게임 게시판 및 전체 통합 게시판(/board/all) 동적 라우팅 및 뷰 분기 로직 구현",
           "통합 게시판에서 특정 게시글 클릭 시 해당 게임 카테고리로 안전하게 이동하는 리다이렉트 핸들링",
           "현재 페이지, 블록 수, 한 번에 볼 개수를 동적 계산하고 파라미터를 보존하는 PagingPosts 엔진 구현",
-          "MyBatis Dynamic Query를 활용한 다중 조건 검색 및 댓글 수 스칼라 서브쿼리 최적화로 N+1 방지"
+          "MyBatis Dynamic Query를 활용한 다중 조건 검색 및 댓글 수 서브쿼리 연동으로 반복 조회 최소화"
         ]
       },
       {
@@ -329,8 +328,8 @@ export const projectsData = [
     ],
     troubleshooting: [
       {
-        issue: "게시글 목록 조회 시 각 게시글의 댓글 개수를 가져오기 위해 N회 쿼리가 추가 호출되는 N+1 문제",
-        solution: "게시글 목록 조회 메인 SQL 내에 스칼라 서브쿼리 (SELECT COUNT(*) FROM COMMENTS WHERE POST_ID = P.POST_ID)를 결합하여 단 1회의 쿼리로 댓글 수를 함께 수집하도록 최적화"
+        issue: "게시글 목록 조회 시 각 게시글의 댓글 개수를 가져오기 위해 쿼리가 반복 호출되어 느려지는 문제",
+        solution: "게시글 목록 조회 메인 SQL 내에 서브쿼리 (SELECT COUNT(*) FROM COMMENTS WHERE POST_ID = P.POST_ID)를 결합하여 단 1회의 쿼리로 댓글 수를 함께 수집하도록 최적화"
       },
       {
         issue: "비밀번호 찾기 링크 클릭 시 권한 검증 없이 URL로 재설정 페이지에 직접 접근 가능한 보안 취약점",
