@@ -24,7 +24,7 @@ export default function Navbar({ activeSection }) {
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <a href="#hero" className="nav-logo">
-          박성국 <span className="logo-accent">웹 포트폴리오</span>
+          박성국 <span className="logo-accent">포트폴리오</span>
         </a>
 
         {/* Desktop Nav */}
