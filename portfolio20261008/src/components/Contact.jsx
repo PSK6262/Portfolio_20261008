@@ -32,8 +32,8 @@ export default function Contact() {
               </svg>
             </div>
             <div>
-              <h3 className="contact-card-title">연락처 & 거주지</h3>
-              <p className="contact-card-subtitle">직접 연락 및 소재지 정보입니다.</p>
+              <h3 className="contact-card-title">연락처 & 근무 가능 지역</h3>
+              <p className="contact-card-subtitle">직접 연락처 및 근무 가능 지역 안내입니다.</p>
             </div>
           </div>
 
@@ -70,9 +70,9 @@ export default function Contact() {
 
             <div className="contact-divider"></div>
 
-            {/* 주소 / 소재지 */}
+            {/* 근무 가능 지역 */}
             <div className="contact-item">
-              <span className="contact-label">Location</span>
+              <span className="contact-label">Work Location</span>
               <div className="contact-location-box">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="location-pin-icon">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
@@ -80,7 +80,7 @@ export default function Contact() {
                 </svg>
                 <div className="location-text-wrap">
                   <span className="contact-value">{profileData.contact.location}</span>
-                  <span className="location-sub">수도권 및 충청권 대면 / 원격 근무 가능</span>
+                  <span className="location-sub">{profileData.contact.locationDetail}</span>
                 </div>
               </div>
             </div>
