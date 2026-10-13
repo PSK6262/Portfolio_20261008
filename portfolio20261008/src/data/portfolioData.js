@@ -50,7 +50,8 @@ export const skillsData = [
       { name: "Java", level: "Advanced", desc: "객체지향 프로그래밍(OOP), 컬렉션 프레임워크, 멀티스레딩, 자바 표준 API" },
       { name: "JavaScript", level: "Advanced", desc: "비동기 이벤트 루프(Promise, async/await), DOM 제어 및 비동기 처리" },
       { name: "Oracle SQL", level: "Advanced", desc: "복합 쿼리 작성, 조인 최적화, DDL/DML, 트랜잭션 제어" },
-      { name: "C / C++", level: "Intermediate", desc: "자료구조, 알고리즘, 메모리 구조(포인터) 및 CS 기본기" }
+      { name: "C / C++", level: "Intermediate", desc: "자료구조, 알고리즘, 메모리 구조(포인터) 및 CS 기본기" },
+      { name: "Python", level: "Intermediate", desc: "데이터 수집 및 파싱, 자동화 스크립트 작성, 알고리즘 구현" }
     ]
   },
   {
