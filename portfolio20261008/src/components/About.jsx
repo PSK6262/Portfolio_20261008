@@ -42,7 +42,7 @@ export default function About() {
       {profileData.coreCompetencies && (
         <div style={{ marginTop: '56px' }}>
           <h3 style={{ fontSize: '22px', fontWeight: 800, marginBottom: '20px', color: 'var(--text-main)' }}>
-            🎯 핵심 직무 역량
+            핵심 직무 역량
           </h3>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
             {profileData.coreCompetencies.map((comp, idx) => (

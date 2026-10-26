@@ -8,10 +8,6 @@ export default function Hero() {
       <div className="hero-container">
         {/* Left: Text Introduction */}
         <div className="hero-content">
-          <div className="hero-badge">
-            <span className="badge-dot"></span>
-            풀스택 개발자
-          </div>
           <h1 className="hero-title">
             안녕하세요, <span className="text-gradient">{profileData.name}</span> 입니다.
           </h1>
