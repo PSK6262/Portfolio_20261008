@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import { skillsData } from '../data/portfolioData';
 
+const LEVEL_LABELS = {
+  advanced: "고급",
+  intermediate: "중급"
+};
+
 export default function Skills() {
   const [activeCategory, setActiveCategory] = useState("All");
   // Set of category names currently expanded to show all items
@@ -108,7 +113,7 @@ export default function Skills() {
                     <div className="skill-item-header">
                       <span className="skill-name">{skill.name}</span>
                       <span className={`skill-level-tag ${skill.level.toLowerCase()}`}>
-                        {skill.level}
+                        {LEVEL_LABELS[skill.level.toLowerCase()] || skill.level}
                       </span>
                     </div>
                     <p className="skill-desc">{skill.desc}</p>
