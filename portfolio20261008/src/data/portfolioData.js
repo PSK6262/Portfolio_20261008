@@ -23,7 +23,7 @@ export const profileData = {
   ],
   bio: [
     "실시간 외부 데이터 API(EPL 경기 데이터, 네이버 치지직 스트리밍, 네이버 지도 위치기반서비스(LBS)) 연동과 Google Gemini API 기반 생성형 AI 파이프라인을 결합한 웹 서비스를 설계하고 개발했습니다.",
-    "Spring MVC 기반 백엔드 아키텍처와 React 프론트엔드 환경을 두루 경험하며, 클린 코드를 중시합니다.",
+    "Spring MVC 백엔드와 React 프론트엔드를 활용해, 화면부터 데이터베이스까지 매끄럽게 연결되는 웹 서비스를 직접 개발했습니다.",
     "여러 차례 팀장 및 기술팀장으로서 팀원들과 방향을 맞추고 책임감 있게 프로젝트를 완수해 왔습니다."
   ],
   profileImage: "/images/profile.jpg",
