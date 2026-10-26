@@ -59,33 +59,33 @@ export const skillsData = [
     items: [
       { name: "Java", level: "Advanced", desc: "객체지향 설계, 컬렉션 프레임워크, 멀티스레딩" },
       { name: "Spring Framework", level: "Advanced", desc: "Spring MVC 구조 설계, 의존성 주입(DI), 인터셉터 기반 권한 검증" },
-      { name: "MyBatis", level: "Advanced", desc: "동적 쿼리(Dynamic SQL), 객체 매핑, 서브쿼리 최적화" },
-      { name: "RESTful API", level: "Advanced", desc: "ApiResponse 표준화, HTTP 상태 코드 매핑" },
+      { name: "MyBatis", level: "Intermediate", desc: "동적 쿼리(Dynamic SQL), 객체 매핑, 서브쿼리 최적화" },
+      { name: "RESTful API", level: "Intermediate", desc: "ApiResponse 표준화, HTTP 상태 코드 매핑" },
       { name: "JSP / Servlet", level: "Advanced", desc: "MVC Model 2 아키텍처, 서블릿 생명주기 관리" },
-      { name: "Apache Tomcat", level: "Intermediate", desc: "서블릿 컨테이너 구성 및 WAR 배포" },
-      { name: "JavaMail API", level: "Intermediate", desc: "SMTP 프로토콜 기반 보안 토큰 이메일 인증 발송" }
+      { name: "Apache Tomcat", level: "Advanced", desc: "서블릿 컨테이너 구성 및 WAR 배포" },
+      { name: "JavaMail API", level: "Advanced", desc: "SMTP 프로토콜 기반 보안 토큰 이메일 인증 발송" }
     ]
   },
   {
     category: "Frontend",
     items: [
       { name: "React", level: "Advanced", desc: "컴포넌트 라이프사이클, 훅(Hooks), 모듈화" },
-      { name: "Redux Toolkit", level: "Advanced", desc: "전역 상태 관리, 슬라이스 설계, 세션 영속화" },
+      { name: "Redux Toolkit", level: "Intermediate", desc: "전역 상태 관리, 슬라이스 설계, 세션 영속화" },
       { name: "JavaScript", level: "Advanced", desc: "비동기 처리(Promise/async-await), 컴포넌트 로직 구현" },
       { name: "Vite", level: "Intermediate", desc: "모던 번들러 구성, HMR, 최적화" },
       { name: "React Router", level: "Intermediate", desc: "SPA 라우팅, HashRouter 기반 404 방어" },
       { name: "PWA", level: "Intermediate", desc: "Service Worker, Web App Manifest, Standalone 앱" },
-      { name: "CSS / 반응형 UI", level: "Advanced", desc: "반응형 레이아웃, CSS 변수 시스템, Framer Motion, Bootstrap" }
+      { name: "CSS / 반응형 UI", level: "Intermediate", desc: "반응형 레이아웃, CSS 변수 시스템, Framer Motion, Bootstrap" }
     ]
   },
   {
     category: "Database & Security",
     items: [
-      { name: "Oracle Database", level: "Intermediate", desc: "관계형 모델링, 트랜잭션 격리, 락 제어" },
-      { name: "H2 Database", level: "Intermediate", desc: "파일 DB 구성 및 테스트 환경 구축" },
+      { name: "Oracle Database", level: "Advanced", desc: "관계형 모델링, 트랜잭션 격리, 락 제어" },
+      { name: "H2 Database", level: "Advanced", desc: "파일 DB 구성 및 테스트 환경 구축" },
       { name: "Apache DBCP", level: "Intermediate", desc: "커넥션 풀 최적화 및 DataSource 설정" },
       { name: "SQL 쿼리 최적화", level: "Intermediate", desc: "서브쿼리를 활용한 반복 쿼리 최소화 및 페이징 처리" },
-      { name: "JWT", level: "Advanced", desc: "Stateless 인증/인가, 환경변수 비밀키 격리" },
+      { name: "JWT", level: "Intermediate", desc: "Stateless 인증/인가, 환경변수 비밀키 격리" },
       { name: "SHA-256", level: "Advanced", desc: "사용자별 고유 Salt 결합 및 키 스트레칭 기반 비밀번호 암호화" }
     ]
   },
@@ -94,10 +94,10 @@ export const skillsData = [
     items: [
       { name: "Google Gemini AI API", level: "Advanced", desc: "프롬프트 엔지니어링, 축구 포지션 정밀 분류, 악성 게시물 자동 검수" },
       { name: "Football-Data.org API", level: "Advanced", desc: "EPL 실시간 데이터 수집, 스케줄러 동기화, UTC-KST 시차 보정" },
-      { name: "OpenWeatherMap API", level: "Intermediate", desc: "실시간 기상 데이터 비동기 수집 및 날씨 위젯 연동" },
+      { name: "OpenWeatherMap API", level: "Advanced", desc: "실시간 기상 데이터 비동기 수집 및 날씨 위젯 연동" },
       { name: "Naver Chzzk API", level: "Advanced", desc: "실시간 라이브 방송 메타데이터 파싱 및 게임 매핑" },
-      { name: "Naver Maps API", level: "Intermediate", desc: "지도 라이프사이클 제어, 위치기반서비스(LBS) 연동" },
-      { name: "HTML5 Geolocation API", level: "Intermediate", desc: "디바이스 좌표 획득 및 내 위치 기반 탐색" }
+      { name: "Naver Maps API", level: "Advanced", desc: "지도 라이프사이클 제어, 위치기반서비스(LBS) 연동" },
+      { name: "HTML5 Geolocation API", level: "Advanced", desc: "디바이스 좌표 획득 및 내 위치 기반 탐색" }
     ]
   },
   {
