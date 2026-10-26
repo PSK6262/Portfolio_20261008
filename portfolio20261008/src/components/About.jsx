@@ -10,8 +10,8 @@ export default function About() {
     },
     {
       index: "02",
-      title: "견고한 백엔드 아키텍처 및 트랜잭션 무결성",
-      desc: "Spring Framework(Spring MVC) 및 MyBatis 기반 백엔드와 React 기반 프론트엔드를 구축했습니다. 데이터 무결성 보장, 중복 처리 방지, 단일 책임 원칙(SRP) 기반 구조화를 통해 신뢰할 수 있는 시스템을 지향합니다."
+      title: "안정적인 백엔드 로직 및 데이터 처리",
+      desc: "Spring MVC와 MyBatis를 활용해 비즈니스 로직을 구축하고 React 프론트엔드와 원활히 통신하도록 연동했습니다. 트랜잭션과 예외 처리를 꼼꼼히 적용하여 데이터 누락이나 중복 오류 없는 안정적인 처리를 구현했습니다."
     },
     {
       index: "03",

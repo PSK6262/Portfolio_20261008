@@ -16,10 +16,10 @@ export const profileData = {
   ],
   coreCompetencies: [
     { title: "원인과 구조 파악", desc: "오류 및 이슈 발생 시 단순 코드 수정을 넘어 입력부터 처리, 결과까지의 데이터 흐름을 추적하여 근본 원인을 특정합니다." },
-    { title: "우선순위 & 빠른 대응", desc: "해결 가능성과 우선순위를 명확히 판단하여 병목을 줄이고 상황에 맞춰 유연하고 효율적으로 대응합니다." },
-    { title: "책임감 있는 리더십", desc: "여러 차례 프로젝트 팀장 및 기술팀장을 맡아 전체 아키텍처 설계, 컨벤션 표준화, 일정 관리를 주도하고 결과에 끝까지 책임졌습니다." },
+    { title: "우선순위 & 빠른 대응", desc: "해결 가능성과 우선순위를 명확히 판단하여 상황에 맞춰 유연하고 효율적으로 대응합니다." },
+    { title: "책임감 있는 리더십", desc: "여러 차례 프로젝트 팀장 및 기술팀장을 맡아 전체 아키텍처 설계와 일정 관리를 주도하고 결과에 끝까지 책임졌습니다." },
     { title: "자기주도 학습 & 지속적 보완", desc: "새로운 기술이나 부족한 역량을 스스로 빠르게 파악하고 공식 문서와 실습을 통해 지속적으로 보완해 나갑니다." },
-    { title: "협업과 방향 조율", desc: "팀원들과 개발 지식 및 ERD 설계를 적극적으로 공유하고 소통하며 팀 전체가 한 방향으로 전진할 수 있도록 조율합니다." }
+    { title: "협업과 방향 조율", desc: "어려움을 겪는 팀원들에게 개발 지식과 해결 방향을 적극적으로 공유하고 소통하며, 팀 전체가 한 방향으로 나아가도록 돕습니다." }
   ],
   bio: [
     "실시간 외부 데이터 API(EPL 경기 데이터, 네이버 치지직 스트리밍, 네이버 지도 위치기반서비스(LBS)) 연동과 Google Gemini API 기반 생성형 AI 파이프라인을 결합한 웹 서비스를 설계하고 개발했습니다.",
@@ -174,34 +174,34 @@ export const projectsData = [
         area: "기술팀장 리딩 & 풀스택 아키텍처 및 공통 통신 규격 수립",
         details: [
           "기술팀장으로서 Spring MVC 백엔드 및 React + Redux Toolkit 프론트엔드 초기 환경 및 디렉토리 구조 전면 셋업",
-          "ApiResponse<T>, ResultCode, CommonCode를 도입하여 프론트-백엔드 간 RESTful 통신 인터페이스 표준화",
-          "글로벌 CORS 설정 일원화 및 환경변수 기반 JWT Secret Key 격리, local.properties 분리로 빌드 안정성 확보"
+          "성공/에러 코드 등 공통 응답 규격을 통일하여 프론트엔드와 백엔드 간 통신 인터페이스 표준화",
+          "프론트엔드와 백엔드 간 CORS 통신 오류를 공통 설정으로 해결하고, 보안 키는 환경변수로 분리하여 안전하게 관리"
         ]
       },
       {
         area: "OCI(Oracle Cloud) 인프라 구축 및 Docker 컨테이너 서비스 배포",
         details: [
-          "Oracle Cloud Infrastructure(OCI) Compute Linux 인스턴스 환경 구성 및 VCN 가상 클라우드 네트워크 보안 목록(Security List) 인바운드/아웃바운드 포트 포워딩 설정",
-          "OCI Autonomous Database(ATP) 전자지갑(Wallet) 보안 인증 연동 및 DB 접속 환경변수 컨테이너 격리 주입",
+          "Oracle Cloud(OCI) 리눅스 서버 환경 구축 및 네트워크 방화벽 포트 설정",
+          "클라우드 오라클 DB 연동 및 접속 정보를 환경변수로 분리하여 보안 강화",
           "백엔드 애플리케이션을 Dockerfile 기반 경량 컨테이너 이미지로 빌드 및 실행 환경 표준화",
-          "Docker 컨테이너 무중단 재빌드·재실행 파이프라인 구축",
-          "PWA(Progressive Web App)를 Android Trusted Web Activity(TWA) 기반 릴리즈 APK로 패키징 및 서명(Keystore) 배포"
+          "Docker 컨테이너 자동 재빌드 및 재실행 스크립트 구축",
+          "모바일 웹(PWA)을 안드로이드 설치용 APK 파일로 패키징하여 배포"
         ]
       },
       {
         area: "외부 축구 API(Football-Data.org API) 연동 및 실시간 스케줄러 동기화",
         details: [
           "Football-Data.org API를 활용한 20개 구단 정보, 경기 일정, 순위표, 선수 스쿼드 데이터 수집 파이프라인 개발",
-          "@Scheduled 기반 실시간 자동 갱신 및 HttpClient 커넥션 풀 재사용 적용",
-          "UTC 기준 경기 시각을 한국 시간(KST)으로 자동 변환하고 자정 전후 시차 왜곡을 보정하는 알고리즘 구현",
-          "기존 Insecure TrustManager(SSL 우회)를 전면 제거하고 표준 SSL 핸드셰이크 체계 확립"
+          "스프링 스케줄러(@Scheduled)를 활용해 최신 경기 데이터를 주기적으로 자동 갱신",
+          "영국 기준 경기 시각(UTC)을 한국 시간(KST)으로 자동 변환하여 날짜와 시간이 맞도록 보정"
+
         ]
       },
       {
         area: "Google Gemini AI API를 활용한 데이터 분류 및 커뮤니티 관리",
         details: [
-          "Google Gemini AI API 프롬프트 엔지니어링을 통해 단순 4대 포지션(GK, DF, MF, FW)을 15개 세부 포지션(LWB, CDM, CAM, RW 등)으로 정밀 분류",
-          "Gemini API 연동을 통한 영문 구단/선수명의 방송 표준 한국어 자동 변환 및 구단 엠블럼 깨짐 자동 복구",
+          "Google Gemini AI API를 활용해 단순 4대 포지션을 15개 세부 포지션으로 정밀 분류",
+          "영문 구단 및 선수명을 자연스러운 한국어로 변환하고 누락된 엠블럼 보완",
           "Gemini AI API 기반 커뮤니티 악성 게시글/댓글 실시간 판별 및 자동 숨김(블라인드) 처리"
         ]
       },
@@ -223,8 +223,8 @@ export const projectsData = [
       {
         area: "PWA 모바일 패키징 및 앱 최적화",
         details: [
-          "Web App Manifest 및 Service Worker를 구성하여 주소창 없는 모바일 전체화면 뷰 및 세로모드 고정",
-          "GitHub Pages SPA 새로고침 404 방지를 위해 HashRouter 기반 라우팅 적용"
+          "주소창 없는 전체화면 뷰와 세로모드를 지원하여 모바일 앱과 동일한 환경 제공",
+          "GitHub Pages 배포 환경에서 새로고침 시 404 에러가 발생하지 않도록 라우팅 처리"
         ]
       }
     ],
