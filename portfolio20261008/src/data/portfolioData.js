@@ -47,67 +47,67 @@ export const skillsData = [
   {
     category: "Languages",
     items: [
-      { name: "Java", level: "Advanced", desc: "객체지향 프로그래밍(OOP), 컬렉션 프레임워크, 멀티스레딩, 자바 표준 API" },
-      { name: "JavaScript", level: "Advanced", desc: "비동기 이벤트 루프(Promise, async/await), DOM 제어 및 비동기 처리" },
-      { name: "Oracle SQL", level: "Advanced", desc: "복합 쿼리 작성, 조인 최적화, DDL/DML, 트랜잭션 제어" },
-      { name: "C / C++", level: "Intermediate", desc: "자료구조, 알고리즘, 메모리 구조(포인터) 및 CS 기본기" },
-      { name: "Python", level: "Intermediate", desc: "데이터 수집 및 파싱, 자동화 스크립트 작성, 알고리즘 구현" }
+      { name: "Java", level: "Advanced", desc: "객체지향 프로그래밍(OOP), 컬렉션 프레임워크, 멀티스레딩" },
+      { name: "JavaScript", level: "Advanced", desc: "비동기 처리(Promise, async/await), DOM 조작 및 이벤트 제어" },
+      { name: "Oracle SQL", level: "Advanced", desc: "복합 쿼리 작성, 테이블 조인, DDL/DML, 트랜잭션 제어" },
+      { name: "C / C++", level: "Intermediate", desc: "자료구조, 알고리즘 및 기본기" },
+      { name: "Python", level: "Intermediate", desc: "데이터 수집 및 파싱, 자동화 스크립트 작성" }
     ]
   },
   {
     category: "Backend",
     items: [
-      { name: "Java", level: "Advanced", desc: "객체지향 설계, 컬렉션 프레임워크, 멀티스레딩" },
-      { name: "Spring Framework", level: "Advanced", desc: "Spring MVC 구조 설계, 의존성 주입(DI), 인터셉터 기반 권한 검증" },
-      { name: "MyBatis", level: "Intermediate", desc: "동적 쿼리(Dynamic SQL), 객체 매핑, 서브쿼리 최적화" },
-      { name: "RESTful API", level: "Intermediate", desc: "ApiResponse 표준화, HTTP 상태 코드 매핑" },
-      { name: "JSP / Servlet", level: "Advanced", desc: "MVC Model 2 아키텍처, 서블릿 생명주기 관리" },
-      { name: "Apache Tomcat", level: "Advanced", desc: "서블릿 컨테이너 구성 및 WAR 배포" },
-      { name: "JavaMail", level: "Advanced", desc: "SMTP 프로토콜 기반 보안 토큰 이메일 인증 발송" }
+      { name: "Java", level: "Advanced", desc: "객체지향 설계 및 핵심 비즈니스 로직 구현" },
+      { name: "Spring Framework", level: "Advanced", desc: "Spring MVC 아키텍처 설계, 의존성 주입, 인터셉터 권한 제어" },
+      { name: "MyBatis", level: "Intermediate", desc: "동적 쿼리(Dynamic SQL), 데이터 매핑, 서브쿼리 활용" },
+      { name: "RESTful API", level: "Intermediate", desc: "성공/에러 코드 표준화 및 HTTP 상태 코드 매핑" },
+      { name: "JSP / Servlet", level: "Advanced", desc: "MVC 구조 설계 및 서블릿 요청/응답 제어" },
+      { name: "Apache Tomcat", level: "Advanced", desc: "서블릿 컨테이너 구동 및 WAR 배포" },
+      { name: "JavaMail", level: "Advanced", desc: "SMTP 프로토콜 기반 이메일 전송 및 일회용 인증 토큰 발송" }
     ]
   },
   {
     category: "Frontend",
     items: [
-      { name: "React", level: "Advanced", desc: "컴포넌트 라이프사이클, 훅(Hooks), 모듈화" },
+      { name: "React", level: "Advanced", desc: "컴포넌트 라이프사이클, 훅(Hooks) 활용, 모듈화 설계" },
       { name: "Redux Toolkit", level: "Intermediate", desc: "전역 상태 관리, 슬라이스 설계, 세션 영속화" },
-      { name: "JavaScript", level: "Advanced", desc: "비동기 처리(Promise/async-await), 컴포넌트 로직 구현" },
+      { name: "JavaScript", level: "Advanced", desc: "UI 이벤트 처리 및 비동기 API 통신 로직 구현" },
       { name: "Vite", level: "Intermediate", desc: "모던 번들러 구성, HMR, 최적화" },
-      { name: "React Router", level: "Intermediate", desc: "SPA 라우팅, HashRouter 기반 404 방어" },
-      { name: "PWA", level: "Intermediate", desc: "Service Worker, Web App Manifest, Standalone 앱" },
-      { name: "CSS / 반응형 UI", level: "Intermediate", desc: "반응형 레이아웃, CSS 변수 시스템, Framer Motion, Bootstrap" }
+      { name: "React Router", level: "Intermediate", desc: "SPA 라우팅 및 새로고침 404 오류 방지" },
+      { name: "PWA", level: "Intermediate", desc: "모바일 전체화면 웹앱 뷰 및 세로모드 지원" },
+      { name: "CSS / 반응형 UI", level: "Intermediate", desc: "반응형 레이아웃(Flex/Grid), CSS 변수 시스템, 모바일 뷰 최적화" }
     ]
   },
   {
     category: "Database & Security",
     items: [
-      { name: "Oracle Database", level: "Advanced", desc: "관계형 모델링, 트랜잭션 격리, 락 제어" },
+      { name: "Oracle Database", level: "Advanced", desc: "관계형 데이터베이스 모델링, 트랜잭션 및 데이터 관리" },
       { name: "H2 Database", level: "Advanced", desc: "파일 DB 구성 및 테스트 환경 구축" },
-      { name: "Apache DBCP", level: "Intermediate", desc: "커넥션 풀 최적화 및 DataSource 설정" },
+      { name: "Apache DBCP", level: "Intermediate", desc: "DB 접속 연결을 미리 생성하고 재사용하여 접속 속도 및 안정성 향상" },
       { name: "SQL 쿼리 최적화", level: "Intermediate", desc: "서브쿼리를 활용한 반복 쿼리 최소화 및 페이징 처리" },
-      { name: "JWT", level: "Intermediate", desc: "Stateless 인증/인가, 환경변수 비밀키 격리" },
-      { name: "SHA-256", level: "Advanced", desc: "사용자별 고유 Salt 결합 및 키 스트레칭 기반 비밀번호 암호화" }
+      { name: "JWT", level: "Intermediate", desc: "토큰 기반 사용자 인증/인가 및 비밀키 환경변수 관리" },
+      { name: "SHA-256", level: "Advanced", desc: "Salt 결합을 통한 단방향 비밀번호 암호화" }
     ]
   },
   {
-    category: "AI & External APIs",
+    category: "AI & API",
     items: [
-      { name: "Google Gemini AI API", level: "Advanced", desc: "프롬프트 엔지니어링, 축구 포지션 정밀 분류, 악성 게시물 자동 검수" },
-      { name: "Football-Data.org API", level: "Advanced", desc: "EPL 실시간 데이터 수집, 스케줄러 동기화, UTC-KST 시차 보정" },
-      { name: "OpenWeatherMap API", level: "Advanced", desc: "실시간 기상 데이터 비동기 수집 및 날씨 위젯 연동" },
-      { name: "Naver Chzzk API", level: "Advanced", desc: "실시간 라이브 방송 메타데이터 파싱 및 게임 매핑" },
-      { name: "Naver Maps API", level: "Advanced", desc: "지도 라이프사이클 제어, 위치기반서비스(LBS) 연동" },
-      { name: "HTML5 Geolocation API", level: "Advanced", desc: "디바이스 좌표 획득 및 내 위치 기반 탐색" }
+      { name: "Google Gemini AI", level: "Advanced", desc: "프롬프트 구성, 축구 포지션 세부 분류, 악성 게시글 자동 검수" },
+      { name: "Football-Data.org API", level: "Advanced", desc: "EPL 경기 일정/결과 실시간 데이터 수집, 시차(UTC/KST) 변환" },
+      { name: "OpenWeatherMap API", level: "Advanced", desc: "위/경도 기반 실시간 기상 데이터 수집 및 날씨 위젯 연동" },
+      { name: "Naver Chzzk API", level: "Advanced", desc: "실시간 라이브 방송 메타데이터 파싱 및 게임 카테고리 매핑" },
+      { name: "Naver Maps API", level: "Advanced", desc: "네이버 지도 렌더링, 마커 표시 및 위치기반서비스(LBS) 연동" },
+      { name: "HTML5 Geolocation API", level: "Advanced", desc: "사용자 GPS 좌표 획득 및 내 위치 중심 지도 이동" }
     ]
   },
   {
-    category: "DevOps & Cloud",
+    category: "배포 및 개발 환경",
     items: [
-      { name: "Oracle Cloud (OCI)", level: "Intermediate", desc: "Compute Linux 인스턴스, VCN 보안 목록 및 Autonomous DB 연동" },
-      { name: "Docker", level: "Intermediate", desc: "Dockerfile 기반 백엔드 컨테이너 빌드 및 배포 환경 표준화" },
-      { name: "Git / GitHub", level: "Advanced", desc: "브랜치 전략, 이슈/PR 관리, 협업 파이프라인" },
-      { name: "Eclipse / VS Code", level: "Advanced", desc: "통합 개발 환경 및 디버깅 툴링" },
-      { name: "Maven / npm", level: "Intermediate", desc: "프로젝트 빌드 라이프사이클 및 의존성 패키지 관리" }
+      { name: "Oracle Cloud (OCI)", level: "Intermediate", desc: "리눅스 서버 인스턴스 구축 및 네트워크 방화벽(포트) 설정" },
+      { name: "Docker", level: "Intermediate", desc: "Dockerfile 기반 컨테이너 이미지 빌드 및 실행 환경 구축" },
+      { name: "Git / GitHub", level: "Advanced", desc: "브랜치 관리, 커밋/PR 워크플로우 및 팀 협업" },
+      { name: "Eclipse / VS Code", level: "Advanced", desc: "통합 개발 환경 구성 및 디버깅" },
+      { name: "Maven / npm", level: "Intermediate", desc: "라이브러리 의존성 및 패키지 관리" }
     ]
   }
 ];
@@ -122,7 +122,7 @@ export const projectsData = [
     role: "기술팀장 / 풀스택 아키텍처 총괄 / OCI 클라우드 배포 / AI 파이프라인 / 외부 API 연동 전담",
     teamSize: "팀 프로젝트 (휴먼교육센터)",
     category: "Full-Stack Web & Mobile PWA",
-    badges: ["React", "Spring Framework", "Oracle Cloud (OCI)", "Docker", "Football-Data.org API", "Google Gemini AI API", "Oracle Database", "Redux Toolkit", "PWA", "MyBatis"],
+    badges: ["React", "Spring Framework", "Oracle Cloud (OCI)", "Docker", "Football-Data.org API", "Google Gemini AI", "Oracle Database", "Redux Toolkit", "PWA", "MyBatis"],
     github: "https://github.com/PSK6262/Team_BuildUp",
     demo: "https://psk6262.github.io/Team_BuildUp/#/plug/mainpage",
     thumbnail: "/images/projects/plug-main.png",
@@ -159,15 +159,15 @@ export const projectsData = [
       }
     ],
     summary:
-      "프리미어리그(EPL) 20개 구단의 경기 일정, 결과, 선수 스쿼드를 Football-Data.org API로 실시간 자동 수집하고, Google Gemini AI API를 접목한 축구 포지션 세부 분류 및 커뮤니티 악성 게시물 자동 필터링을 구현한 축구 종합 플랫폼입니다.",
+      "프리미어리그(EPL) 실시간 경기 정보와 구단별 팬 커뮤니티를 하나로 결합하여, 경기 데이터를 확인하며 자유롭게 소통할 수 있는 축구 종합 플랫폼입니다.",
     whatMade: [
-      "Oracle Cloud Infrastructure(OCI) & Docker 기반 백엔드 클라우드 인프라 구축 및 상용 배포 자동화",
-      "Football-Data.org API 기반 EPL 20개 구단 및 경기 일정/결과 실시간 자동 동기화 (스프링 스케줄러 & UTC-KST 시차 보정)",
-      "Google Gemini AI API 기반 지능형 파이프라인 (비정형 선수 15개 세부 포지션 매핑, 한글화, 커뮤니티 악성 콘텐츠 자동 검수)",
-      "승부예측 & 포인트 리워드 시스템 (경기 시작 전 예측 수정 지원, 포인트 중복 지급 방지)",
-      "나만의 스쿼드 빌더 및 전술 시뮬레이션 (커스텀 포메이션, 유저 팀 간 가상 대결 및 쿨타임 제어)",
-      "관리자 통합 제어 콘솔 (테스트용 경기 시뮬레이터, 스코어와 골 기록 불일치 자동 보정 도구)",
-      "Progressive Web App(PWA) 모바일 패키징 (오프라인 캐싱, 세로모드 고정, Standalone 전체화면)"
+      "Football-Data.org API 연동을 통한 EPL 20개 구단 경기 일정·결과 및 실시간 순위표 제공",
+      "20개 구단 전용 팬 커뮤니티 및 게시판 소통 공간 구축",
+      "Google Gemini AI를 활용한 선수 15개 세부 포지션 분류, 영문 한글화 및 악성 게시글 자동 필터링",
+      "승부예측 및 참여 포인트 리워드 시스템 구축",
+      "나만의 스쿼드 빌더 및 전술 시뮬레이션 (커스텀 포메이션 배치, 랜덤 AI 및 실제 구단과의 가상 대결)",
+      "관리자 전용 제어 콘솔 (테스트용 가상 경기 시뮬레이터 및 데이터 자동 보정)",
+      "Oracle Cloud(OCI) & Docker 기반 서버 구축 및 PWA 모바일 패키징 배포"
     ],
     whatDid: [
       {
@@ -198,11 +198,11 @@ export const projectsData = [
         ]
       },
       {
-        area: "Google Gemini AI API를 활용한 데이터 분류 및 커뮤니티 관리",
+        area: "Google Gemini AI를 활용한 데이터 분류 및 커뮤니티 관리",
         details: [
-          "Google Gemini AI API를 활용해 단순 4대 포지션을 15개 세부 포지션으로 정밀 분류",
+          "Google Gemini AI를 활용해 단순 4대 포지션을 15개 세부 포지션으로 정밀 분류",
           "영문 구단 및 선수명을 자연스러운 한국어로 변환하고 누락된 엠블럼 보완",
-          "Gemini AI API 기반 커뮤니티 악성 게시글/댓글 실시간 판별 및 자동 숨김(블라인드) 처리"
+          "Gemini AI 기반 커뮤니티 악성 게시글/댓글 실시간 판별 및 자동 숨김(블라인드) 처리"
         ]
       },
       {
@@ -275,7 +275,7 @@ export const projectsData = [
       }
     ],
     summary:
-      "네이버 치지직(CHZZK) 오픈 API를 실시간 연동하여 게임별 방송 중인 스트리머 정보를 제공하고, 스팀 게임 정보와 연계된 게임별/통합 게시판 및 안전한 계정 복구 시스템을 구현한 커뮤니티입니다.",
+      "실시간 치지직 게임 방송과 스팀(Steam) 게임 정보를 한눈에 확인하고, 게이머들이 자유롭게 소통할 수 있는 종합 게임 커뮤니티 플랫폼입니다.",
     whatMade: [
       "네이버 치지직(CHZZK) 오픈 API 기반 실시간 게임 방송 썸네일, 스트리머 정보, 시청자 수 연동 패널",
       "Steam API 연동 및 개별 게임 게시판과 전체 통합 게시판 분기 시스템",
@@ -440,7 +440,7 @@ export const projectsData = [
       }
     ],
     summary:
-      "MVC 패턴을 도입하여 프로그래밍의 기초적인 디자인 패턴을 실습하고, 사용자 인증과 게시판 CRUD 기능을 구현한 게임 커뮤니티 플랫폼입니다.",
+      "게임별 파티원 모집과 자유로운 정보 공유 및 소통을 위해 제작한 게임 커뮤니티 플랫폼입니다.",
     whatMade: [
       "MVC 패턴 기반 커뮤니티 웹 설계 및 개발",
       "H2 DB 연동을 통한 회원 및 게시글 CRUD 기능 구현",
