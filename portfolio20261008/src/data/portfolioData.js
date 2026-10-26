@@ -507,13 +507,13 @@ export const educationData = {
     {
       name: "JLPT N1 (일본어능력시험 1급)",
       issuer: "일본국제교류기금 (Japan Foundation)",
-      date: "취득",
+      date: "2022.01",
       status: "합격"
     }
   ],
   military: {
     title: "병역 사항",
     status: "군필",
-    period: "2017년 ~ 2019년"
+    period: "2017 ~ 2019"
   }
 };
