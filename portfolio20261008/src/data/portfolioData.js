@@ -63,7 +63,7 @@ export const skillsData = [
       { name: "RESTful API", level: "Intermediate", desc: "ApiResponse 표준화, HTTP 상태 코드 매핑" },
       { name: "JSP / Servlet", level: "Advanced", desc: "MVC Model 2 아키텍처, 서블릿 생명주기 관리" },
       { name: "Apache Tomcat", level: "Advanced", desc: "서블릿 컨테이너 구성 및 WAR 배포" },
-      { name: "JavaMail API", level: "Advanced", desc: "SMTP 프로토콜 기반 보안 토큰 이메일 인증 발송" }
+      { name: "JavaMail", level: "Advanced", desc: "SMTP 프로토콜 기반 보안 토큰 이메일 인증 발송" }
     ]
   },
   {
@@ -249,7 +249,7 @@ export const projectsData = [
     role: "기술팀장 / 백엔드 코어 인프라 / ERD 총괄 / 네이버 치지직 API 실시간 파싱 / 게시판 / 보안 인증 전담",
     teamSize: "팀 프로젝트 (휴먼교육센터)",
     category: "Full-Stack Web · Spring Framework & JSP",
-    badges: ["Java", "Spring Framework", "MyBatis", "Oracle Database", "Naver Chzzk API", "Steam API", "JavaMail API", "Apache DBCP"],
+    badges: ["Java", "Spring Framework", "MyBatis", "Oracle Database", "Naver Chzzk API", "Steam API", "JavaMail", "Apache DBCP"],
     github: "https://github.com/PSK6262/Team_5asis",
     thumbnail: "/images/projects/5asis-main.jpg",
     images: [
@@ -278,27 +278,27 @@ export const projectsData = [
       "네이버 치지직(CHZZK) 오픈 API를 실시간 연동하여 게임별 방송 중인 스트리머 정보를 제공하고, 스팀 게임 정보와 연계된 게임별/통합 게시판 및 안전한 계정 복구 시스템을 구현한 커뮤니티입니다.",
     whatMade: [
       "네이버 치지직(CHZZK) 오픈 API 기반 실시간 게임 방송 썸네일, 스트리머 정보, 시청자 수 연동 패널",
-      "Steam API 연동 및 개별 게임 게시판 / 전체 통합(All) 게시판 분기 시스템",
+      "Steam API 연동 및 개별 게임 게시판과 전체 통합 게시판 분기 시스템",
       "게시글 작성/수정/삭제, 댓글, 게시글 추천 이력, 첨부파일 관리",
       "조회수/추천수 가중치 기반 실시간 인기 게시글 및 인기 게시판 랭킹 시스템",
-      "다차원 검색 엔진 및 고성능 페이지네이션(PagingPosts)",
-      "이메일 인증 기반 5분 만료 일회용 보안 토큰을 활용한 안전한 비밀번호 재설정 파이프라인"
+      "조건별 게시글 검색 및 페이징 기능",
+      "이메일 인증 기반 일회용 보안 토큰을 활용한 안전한 비밀번호 재설정"
     ],
     whatDid: [
       {
         area: "기술팀장 리딩 & 백엔드 코어 아키텍처 / Spring 인프라 구축",
         details: [
-          "기술팀장으로서 ERD와 데이터베이스 구성을 총괄하고, 개발 초기 단계에서 필요한 DTO 구조를 사전에 정의하여 배포",
+          "기술팀장으로서 ERD 및 데이터베이스 설계를 총괄하고, 공통 DTO 구조 정의",
           "Java 기반 Spring Framework, MyBatis, Oracle JDBC, DBCP 커넥션 풀 메이븐 의존성 설계",
-          "root-context.xml(DataSource, SqlSessionFactoryBean), servlet-context.xml, web.xml 전체 인프라 구성",
-          "UserInfo, Post, GameList, Comments, PagingPosts 등 전 계층 DTO 표준화"
+          "스프링 핵심 설정 파일(DB 연동, 서블릿 매핑 등) 구성",
+          "회원, 게시글, 댓글, 페이징 등 계층 간 데이터 전달을 위한 DTO 정의"
         ]
       },
       {
         area: "네이버 치지직(CHZZK) 오픈 API 연동 서비스 개발",
         details: [
-          "치지직 API를 호출하여 JSON 응답에서 실시간 라이브 상태, 썸네일 URL, 채널명, 동시 시청자 수를 파싱하는 ChzzkApiService 개발",
-          "GAME_LIST 테이블의 CHZZK_GAME_NAME과 치지직 카테고리를 동적 매핑하여 게임 게시판 상단에 실시간 방송 패널 렌더링"
+          "치지직 API 연동으로 실시간 방송 상태, 썸네일, 시청자 수 데이터를 수집하는 서비스 개발",
+          "게임 카테고리와 치지직 방송을 매핑하여 게시판 상단에 실시간 방송 패널 표시"
         ]
       },
       {
@@ -306,23 +306,23 @@ export const projectsData = [
         details: [
           "개별 게임 게시판 및 전체 통합 게시판(/board/all) 동적 라우팅 및 뷰 분기 로직 구현",
           "통합 게시판에서 특정 게시글 클릭 시 해당 게임 카테고리로 안전하게 이동하는 리다이렉트 핸들링",
-          "현재 페이지, 블록 수, 한 번에 볼 개수를 동적 계산하고 파라미터를 보존하는 PagingPosts 엔진 구현",
-          "MyBatis Dynamic Query를 활용한 다중 조건 검색 및 댓글 수 서브쿼리 연동으로 반복 조회 최소화"
+          "현재 페이지, 블록 수, 목록 개수를 계산하는 페이징 처리 기능 구현",
+          "MyBatis 동적 쿼리를 활용한 조건별 검색 및 서브쿼리로 조회 최적화"
         ]
       },
       {
-        area: "JavaMail API 기반 이메일 인증 및 5분 만료 토큰 계정 복구 보안 시스템",
+        area: "JavaMail 기반 이메일 인증 및 비밀번호 재설정 기능",
         details: [
           "javax.mail 기반 SMTP 메일 발송 유틸 개발",
-          "비밀번호 찾기 시 암호학적 난수 토큰을 생성하여 DB에 적재하고, 5분 타임아웃 만료 여부를 정밀 검증",
-          "전용 보안 인터셉터(PwResetModeInterceptor, LoginInterceptor)를 제작하여 비정상 URL 접근 및 토큰 변조 원천 차단"
+          "비밀번호 재설정 시 일회용 보안 토큰을 생성하고 5분 유효시간 검증 로직 구현",
+          "스프링 인터셉터를 활용하여 비정상 URL 접근 및 토큰 변조 방지"
         ]
       },
       {
-        area: "아키텍처 리팩토링 및 클린 코드 수립",
+        area: "비즈니스 로직 분리 및 공통 코드 관리",
         details: [
-          "DAO에 혼재되어 있던 복잡한 비즈니스 로직을 Service 레이어로 전면 이관하여 단일 책임 원칙(SRP) 확립",
-          "자주 사용되는 상수 및 세션 키를 CommonCode.java로 중앙 집중화하여 유지보수성 극대화"
+          "DAO에 있던 비즈니스 로직을 Service 계층으로 분리하여 유지보수성 향상",
+          "자주 쓰이는 상수 및 세션 키를 공통 코드로 분리하여 일관성 있게 관리"
         ]
       }
     ],
@@ -366,20 +366,20 @@ export const projectsData = [
     summary:
       "도심 속 공원과 산책로 정보를 네이버 지도 위에 시각화하고, 사용자 현재 위치 및 실시간 날씨 정보를 결합하여 맞춤형 산책 코스를 추천하는 반응형 웹 서비스입니다.",
     whatMade: [
-      "네이버 지도(Naver Maps API) 기반 서울/도심 공원 및 둘레길 마커 시각화 및 인터랙션",
-      "HTML5 Geolocation API 기반 내 위치 중심 주변 산책로 탐색 기능",
-      "OpenWeatherMap API 기반 실시간 날씨, 기온, 산책 지수 상단 네비게이션 위젯",
+      "네이버 지도 API 기반 도심 공원 및 산책로 마커 표시 및 인터랙션",
+      "현재 위치 기반 주변 산책로 탐색 기능",
+      "실시간 날씨 및 기온 정보 위젯 제공",
       "산책로 코스별 상세 제원(총 거리 km, 소요 시간, 난이도, 주요 경유지) 제공",
       "브라우저 localStorage를 활용한 나만의 산책 코스 즐겨찾기 관리",
-      "지도 화면을 가리지 않고 자유롭게 드래그 및 크기 조절이 가능한 플로팅 뷰어(react-rnd)"
+      "지도를 보며 자유롭게 이동 및 크기 조절이 가능한 플로팅 정보창 구현"
     ],
     whatDid: [
       {
-        area: "팀 리딩 및 프론트엔드 아키텍처 / 배포 파이프라인 구축",
+        area: "팀 리딩 및 프론트엔드 환경 구축",
         details: [
-          "팀장으로서 전체 개발 방향성을 수립하고, 팀원 간 변수명 및 디렉토리 구조를 프로젝트 착수 단계에서 통일하여 배포",
-          "Vite + React 기반 프로젝트 보일러플레이트 구축 및 ESLint 표준화",
-          "GitHub Pages 정적 호스팅 환경에서 새로고침 404 방지를 위해 HashRouter로 선제적 전환 및 배포 자동화",
+          "팀장으로서 전체 개발 방향을 이끌고 폴더 구조 및 규칙 통일",
+          "Vite + React 기반 프로젝트 초기 환경 설정",
+          "GitHub Pages 배포 환경에서 새로고침 시 404 오류가 발생하지 않도록 라우팅 처리",
           "네이버 지도 API Key 등 외부 인증 키를 .env 환경변수로 안전하게 격리"
         ]
       },
@@ -399,10 +399,10 @@ export const projectsData = [
         ]
       },
       {
-        area: "인터랙티브 UI/UX 고도화 및 컴포넌트 모듈화",
+        area: "컴포넌트 모듈화 및 플로팅 패널 구현",
         details: [
-          "ListMain, Trail, ParkCard 컴포넌트 단위 분리 및 재사용성 향상",
-          "react-rnd 라이브러리를 활용하여 지도 화면에서 자유롭게 이동 및 크기 조절이 가능한 플로팅 상세 정보 패널 개발",
+          "목록 및 카드 컴포넌트 단위 분리로 코드 재사용성 향상",
+          "지도 위에서 자유롭게 이동 및 크기 조절이 가능한 플로팅 상세 정보창 개발",
           "ESC 키 입력 시 팝업 닫기, 검색창 원클릭 초기화 버튼, 검색어 공백 제거 예외 처리 적용",
           "localStorage 기반 즐겨찾기 추가/삭제가 즉시 렌더링에 반영되는 반응형 상태 관리 구현"
         ]
@@ -426,10 +426,10 @@ export const projectsData = [
     title: "GAMER PARTY",
     subtitle: "MVC 패턴 기반 기초 웹 아키텍처 및 H2DB 연동 게임 커뮤니티 사이트",
     period: "2021.11 ~ 2021.12",
-    role: "단독 개발 / 전반적인 MVC 구조 설계 / H2DB CRUD 및 사용자 인증(JavaMail API) 전담",
+    role: "단독 개발 / 전반적인 MVC 구조 설계 / H2DB CRUD 및 사용자 인증(JavaMail) 전담",
     teamSize: "학과 프로젝트",
     category: "Academic Web Project · JSP & MVC",
-    badges: ["JSP", "Servlet", "Apache Tomcat", "H2 Database", "JavaMail API", "MVC Pattern"],
+    badges: ["JSP", "Servlet", "Apache Tomcat", "H2 Database", "JavaMail", "MVC Pattern"],
     github: "https://github.com/PSK6262/2022Web",
     thumbnail: "/images/projects/gamerparty.png",
     images: [
@@ -442,10 +442,10 @@ export const projectsData = [
     summary:
       "MVC 패턴을 도입하여 프로그래밍의 기초적인 디자인 패턴을 실습하고, 사용자 인증과 게시판 CRUD 기능을 구현한 게임 커뮤니티 플랫폼입니다.",
     whatMade: [
-      "JSP Model 2(MVC) 패턴 기반 커뮤니티 웹 아키텍처 설계",
-      "H2 Database 연동을 통한 사용자 및 게시글 CRUD 데이터베이스 핸들링",
-      "JavaMail API 연동을 통한 사용자 이메일 인증 기능 구현",
-      "게시글 목록 표시 및 페이지네이션 알고리즘 자체 구현"
+      "MVC 패턴 기반 커뮤니티 웹 설계 및 개발",
+      "H2 파일 DB 연동을 통한 회원 및 게시글 CRUD 기능 구현",
+      "JavaMail 연동을 통한 회원가입 이메일 인증 구현",
+      "게시글 목록 표시 및 페이징 기능 자체 구현"
     ],
     whatDid: [
       {
@@ -456,10 +456,10 @@ export const projectsData = [
         ]
       },
       {
-        area: "JavaMail API 기반 사용자 인증 파이프라인",
+        area: "JavaMail을 활용한 회원가입 이메일 인증",
         details: [
           "SMTP 프로토콜을 활용한 회원가입 이메일 인증 메일 발송 구현",
-          "사용자 인증 토큰 검증 흐름 실습"
+          "인증 토큰 유효성 검증 및 회원가입 완료 처리 로직 구현"
         ]
       }
     ],

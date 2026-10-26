@@ -179,7 +179,7 @@ export default function ProjectModal({ project, onClose }) {
           {/* Section 3: 본인 담당 및 기여 내역 */}
           <div className="modal-section">
             <h3 className="modal-section-title">
-              <span className="section-number">03</span> 본인 담당 및 기여 내역
+              <span className="section-number">03</span> {project.role?.includes('단독') ? '핵심 개발 및 구현 내역' : '본인 담당 및 기여 내역'}
             </h3>
             <div className="modal-did-grid">
               {project.whatDid.map((area, idx) => (
