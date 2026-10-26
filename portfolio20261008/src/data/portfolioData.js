@@ -82,7 +82,7 @@ export const skillsData = [
     category: "Database & Security",
     items: [
       { name: "Oracle Database", level: "Intermediate", desc: "관계형 모델링, 트랜잭션 격리, 락 제어" },
-      { name: "H2 Database", level: "Intermediate", desc: "인메모리/파일 DB 구성 및 테스트 환경 구축" },
+      { name: "H2 Database", level: "Intermediate", desc: "파일 DB 구성 및 테스트 환경 구축" },
       { name: "Apache DBCP", level: "Intermediate", desc: "커넥션 풀 최적화 및 DataSource 설정" },
       { name: "SQL 쿼리 최적화", level: "Intermediate", desc: "서브쿼리를 활용한 반복 쿼리 최소화 및 페이징 처리" },
       { name: "JWT", level: "Advanced", desc: "Stateless 인증/인가, 환경변수 비밀키 격리" },
@@ -92,11 +92,11 @@ export const skillsData = [
   {
     category: "AI & External APIs",
     items: [
-      { name: "Google Gemini AI API", level: "Advanced", desc: "프롬프트 엔지니어링, 포지션 정밀 분류, 유해성 모더레이션" },
+      { name: "Google Gemini AI API", level: "Advanced", desc: "프롬프트 엔지니어링, 축구 포지션 정밀 분류, 악성 게시물 자동 검수" },
       { name: "Football-Data.org API", level: "Advanced", desc: "EPL 실시간 데이터 수집, 스케줄러 동기화, UTC-KST 시차 보정" },
       { name: "OpenWeatherMap API", level: "Intermediate", desc: "실시간 기상 데이터 비동기 수집 및 날씨 위젯 연동" },
       { name: "Naver Chzzk API", level: "Advanced", desc: "실시간 라이브 방송 메타데이터 파싱 및 게임 매핑" },
-      { name: "Naver Maps API", level: "Intermediate", desc: "지도 라이프사이클 제어, 커스텀 마커, 위치기반서비스(LBS) 연동" },
+      { name: "Naver Maps API", level: "Intermediate", desc: "지도 라이프사이클 제어, 위치기반서비스(LBS) 연동" },
       { name: "HTML5 Geolocation API", level: "Intermediate", desc: "디바이스 좌표 획득 및 내 위치 기반 탐색" }
     ]
   },
@@ -159,11 +159,11 @@ export const projectsData = [
       }
     ],
     summary:
-      "프리미어리그(EPL) 20개 구단의 경기 일정, 결과, 선수 스쿼드를 Football-Data.org API로 실시간 자동 수집하고, Google Gemini AI API를 접목한 선수 포지션 분류 및 커뮤니티 유해성 모더레이션을 구현한 축구 종합 플랫폼입니다.",
+      "프리미어리그(EPL) 20개 구단의 경기 일정, 결과, 선수 스쿼드를 Football-Data.org API로 실시간 자동 수집하고, Google Gemini AI API를 접목한 축구 포지션 세부 분류 및 커뮤니티 악성 게시물 자동 필터링을 구현한 축구 종합 플랫폼입니다.",
     whatMade: [
       "Oracle Cloud Infrastructure(OCI) & Docker 기반 백엔드 클라우드 인프라 구축 및 상용 배포 자동화",
       "Football-Data.org API 기반 EPL 20개 구단 및 경기 일정/결과 실시간 자동 동기화 (스프링 스케줄러 & UTC-KST 시차 보정)",
-      "Google Gemini AI API 기반 지능형 파이프라인 (비정형 선수 15개 세부 포지션 매핑, 한글화, 커뮤니티 자동 모더레이션)",
+      "Google Gemini AI API 기반 지능형 파이프라인 (비정형 선수 15개 세부 포지션 매핑, 한글화, 커뮤니티 악성 콘텐츠 자동 검수)",
       "승부예측 & 포인트 리워드 시스템 (경기 시작 전 예측 수정 지원, 포인트 중복 지급 방지)",
       "나만의 스쿼드 빌더 및 전술 시뮬레이션 (커스텀 포메이션, 유저 팀 간 가상 대결 및 쿨타임 제어)",
       "관리자 통합 제어 콘솔 (테스트용 경기 시뮬레이터, 스코어와 골 기록 불일치 자동 보정 도구)",
@@ -342,7 +342,7 @@ export const projectsData = [
   {
     id: "greenway",
     title: "GreenWay",
-    subtitle: "네이버 지도 및 실시간 기상 API 기반 도심 공원 및 산책로 탐색 웰니스 웹 서비스",
+    subtitle: "네이버 지도 및 실시간 기상 API 기반 도심 공원 및 산책로 탐색 웹 서비스",
     period: "2026.07 ~ 2026.08",
     role: "팀장 / 프론트엔드 환경 구축 / 네이버 지도 기반 위치기반서비스(LBS) 연동 / 날씨 위젯 / 플로팅 모달 / 배포 전담",
     teamSize: "팀 프로젝트 (휴먼교육센터)",
@@ -388,7 +388,7 @@ export const projectsData = [
         details: [
           "네이버 지도 객체 비동기 초기화 및 지도 중심점, 줌(Zoom), 드래그 라이프사이클 제어",
           "HTML5 Geolocation API를 연동하여 사용자 위/경도 좌표를 획득하고 원클릭으로 내 위치 중심 이동 구현",
-          "산책로 데이터셋(parksData.js)을 파싱하여 지도 위 커스텀 마커 렌더링 및 팝업 이벤트 핸들링"
+          "산책로 데이터셋(parksData.js)을 파싱하여 지도 위 마커 렌더링 및 팝업 이벤트 핸들링"
         ]
       },
       {
@@ -452,7 +452,7 @@ export const projectsData = [
         area: "전반적인 MVC 아키텍처 및 컨트롤러/모델 설계",
         details: [
           "요청을 처리하는 서블릿 컨트롤러와 데이터 로직을 분리하는 MVC 구조 설계",
-          "H2 인메모리/파일 DB를 활용한 DAO/DTO 데이터 접근 계층 구축"
+          "H2 파일 DB를 활용한 DAO/DTO 데이터 접근 계층 구축"
         ]
       },
       {
